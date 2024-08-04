@@ -1,0 +1,172 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "25FE5CF0AEECF404"
+	group: ""
+	id: "25FE5CF0AEECF404"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "62D10430ED0888AD"
+			tasks: [{
+				id: "2C615CE8622F5021"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			id: "715CDE39A791F96C"
+			tasks: [{
+				id: "4CB404D0EA7CAB5B"
+				item: {
+					Count: 1b
+					id: "tconstruct:tinker_station"
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			id: "02908D74AA697D48"
+			tasks: [{
+				id: "241661A7F32A0DEB"
+				item: {
+					Count: 1b
+					id: "tconstruct:part_builder"
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			id: "38F377D1B9F42F5F"
+			tasks: [{
+				id: "7C55717C329EE3BC"
+				item: "tconstruct:grout"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			id: "229CE0F4A6478D1B"
+			tasks: [{
+				id: "54CAA64A5FAE95E9"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			id: "791C51A33FE2B60A"
+			tasks: [{
+				id: "7F9EF4B3A3E09D2E"
+				item: "tconstruct:seared_brick"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["62D10430ED0888AD"]
+			id: "371994E6E615576A"
+			tasks: [{
+				id: "02B6B892D79A4AEB"
+				item: "tconstruct:pattern"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			id: "5865F7C161914EFD"
+			tasks: [{
+				id: "37D70C29F0CB9BA8"
+				item: "tconstruct:seared_melter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			id: "6FD0E86688E57F9F"
+			tasks: [{
+				id: "565BE6B86970605E"
+				item: "tconstruct:seared_heater"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			id: "4F3F942899A46210"
+			tasks: [{
+				id: "04231838E6E7D76F"
+				item: "tconstruct:blank_sand_cast"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			id: "6EA9B1FC785D37F5"
+			tasks: [{
+				advancement: "tconstruct:tools/tinker_tool"
+				criterion: ""
+				id: "1F8AF62A45A261DC"
+				type: "advancement"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			id: "5E47548B5BD00F34"
+			tasks: [{
+				id: "68C173388459C454"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			id: "3A8F1C084899DCE6"
+			tasks: [{
+				id: "24BD473895A9FCF8"
+				item: {
+					Count: 1b
+					id: "minecraft:shears"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			id: "746F6580FE2535AA"
+			tasks: [{
+				id: "032EEC46BFD10B0C"
+				item: "minecraft:oak_leaves"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+	]
+	title: "卷二 冶金时代"
+}

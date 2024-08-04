@@ -1,0 +1,408 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tips"
+	group: ""
+	id: "2E70359C7C3972E8"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7D18C3DC24482732"]
+			description: [
+				"灾厄村民认为Steve应为各种事件的发生负责。"
+				"最近的一些情报表示，他们展开了一项刺杀行动，"
+				"所以遇到一些来历不明的商人，还是谨慎行事为好……"
+			]
+			icon: "minecraft:lead"
+			id: "17B4118A241652E3"
+			rewards: [{
+				id: "3EBBEA0E0F59FEAC"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "37EBBFB52BC6045E"
+				title: "了解"
+				type: "checkmark"
+			}]
+			title: "有内鬼，中止交易"
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7D18C3DC24482732"]
+			dependency_requirement: "one_completed"
+			description: ["旅行中必不可少的好帮手"]
+			id: "45AEBC8128D403AF"
+			rewards: [{
+				id: "339828D77F7CF07A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "56C227F3B139C3BF"
+				item: "backpacked:backpack"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			description: [""]
+			icon: {
+				Count: 1b
+				id: "minecraft:diamond_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7D18C3DC24482732"
+			rewards: [
+				{
+					id: "252B90CD7261B05A"
+					item: "solcarrot:food_book"
+					type: "item"
+				}
+				{
+					id: "22228FFC0AAE73DE"
+					item: "comforts:sleeping_bag_red"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2E27FEB404A4B62C"
+					item: "minecraft:baked_potato"
+					type: "item"
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "7C2614119312D33F"
+				type: "dimension"
+			}]
+			title: "始"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7D18C3DC24482732"]
+			description: ["烤火取暖，加热食物の利器"]
+			id: "7442032F5FA842E1"
+			rewards: [{
+				id: "41E1D63A7BF869E3"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4DC7CE17BEC0187B"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D18C3DC24482732"]
+			description: [
+				"是时候招募一些警卫村民和黏土傀儡"
+				"以抵抗灾厄势力日益强大的攻势"
+				"使用黏土和南瓜以召唤黏土傀儡"
+			]
+			icon: "minecraft:clay_ball"
+			id: "6DEA38D0C0769462"
+			rewards: [{
+				id: "5072A407FDDB90D6"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7D6EC167C39C11C1"
+				title: "村民"
+				type: "checkmark"
+			}]
+			title: "招募援军"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7D18C3DC24482732"]
+			description: [
+				"有垃圾，就要丢垃圾桶"
+				"可不能随地乱丢"
+			]
+			id: "1BB9C7234F658C09"
+			rewards: [{
+				id: "5AC61E6BD5D17B20"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "25C7E9976455C035"
+				item: "decoration_delight:trash_bin"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D18C3DC24482732"]
+			description: ["开启一段新的旅程"]
+			id: "11AE962FAE0A48CF"
+			rewards: [{
+				id: "37F1201F593DE997"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2F65BC6CD7633DFD"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "smallships:ships"
+					}
+				}
+				title: "Any #smallships:ships"
+				type: "item"
+			}]
+			title: "扬帆远航"
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D18C3DC24482732"]
+			description: ["带上你的爱狗，开展一场酣畅淋漓的滑雪~"]
+			id: "303EFF0028AB8E2C"
+			rewards: [{
+				id: "187712A8EC7CD99F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0B8202B667675F6D"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "snowyspirit:sleds"
+					}
+				}
+				title: "Any #snowyspirit:sleds"
+				type: "item"
+			}]
+			title: "雪橇"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7D18C3DC24482732"]
+			id: "2949C028899B5511"
+			rewards: [{
+				id: "060C09E51D3F87C6"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "26513D4F94B3C145"
+				item: "astikorcarts:supply_cart"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1b
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "apotheosis:apoth_chronicle"
+				}
+			}
+			id: "4DD0E151DE110A4A"
+			rewards: [{
+				id: "58CD3B2A5C65D081"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "apotheosis:apoth_chronicle"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "004779BCC11EF19F"
+				type: "checkmark"
+			}]
+			title: "神化"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1b
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "goety:black_book"
+				}
+			}
+			id: "04C1C0A94ADB9455"
+			rewards: [{
+				id: "2F993C5680E9067C"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "goety:black_book"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "243C62B75995FDB1"
+				title: "诡厄巫术"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			icon: "create:wrench"
+			id: "79BCB8A213A28598"
+			rewards: [{
+				id: "4C42D23E9271F8B3"
+				item: "create:wrench"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5938E12B20C24DA4"
+				title: "机械动力"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			icon: "fruittrees:apple_sapling"
+			id: "262E878A3F7D857E"
+			rewards: [{
+				id: "58B18421AAF08431"
+				item: "minecraft:apple"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2987B54B675B0F98"
+				type: "checkmark"
+			}]
+			title: "妙趣果园"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			icon: "tconstruct:materials_and_you"
+			id: "6083C29423B62821"
+			rewards: [{
+				id: "41BB30442F77951B"
+				item: "tconstruct:materials_and_you"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D7BD543BDC4DDB4"
+				type: "checkmark"
+			}]
+			title: "匠魂"
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			icon: "eidolon:codex"
+			id: "14EB8722448A434E"
+			rewards: [{
+				id: "3760B90231320CCD"
+				item: "eidolon:codex"
+				type: "item"
+			}]
+			tasks: [{
+				id: "44A439DD38A116F6"
+				type: "checkmark"
+			}]
+			title: "幻梦"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			icon: "botania:lexicon"
+			id: "2DB182FB77BC1167"
+			rewards: [{
+				id: "6144E256F157E3FA"
+				item: "botania:lexicon"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4FCA70F7A2453F5D"
+				title: "新生魔艺"
+				type: "checkmark"
+			}]
+			title: "植物魔法"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			icon: "create_central_kitchen:cooking_guide"
+			id: "5FD37633C79BB6E0"
+			rewards: [{
+				id: "588285A6ECE74B35"
+				item: {
+					Count: 1b
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5BAFB8953CF2B71B"
+				type: "checkmark"
+			}]
+			title: "农夫乐事"
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1b
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "totemic:totempedia"
+				}
+			}
+			id: "1585A86B46FAD42C"
+			rewards: [{
+				id: "4CA7073B7386ED78"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "totemic:totempedia"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E9E31CB78FB0346"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+	]
+	title: "始"
+}
