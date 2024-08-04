@@ -1,0 +1,11 @@
+
+["Musketeer Illager - Config"]
+	#Replace naturally spawning Pillagers with Marksmen?
+	"Replace Pillagers" = true
+	#Pillagers replacement rate
+	"Replacement Rate" = 0.5
+	#Musket Illagers spawn rate
+	"Musket Illager Rate" = 0.3
+	#Sets all friendly fire damage for raiders at 2hp
+	"Minimize Friendly Damage" = true
+

@@ -1,0 +1,48 @@
+#RockGeneration frequency. (1 = low, 5 = all over)
+#Range: 1 ~ 5
+ROCK_GEN_FREQUENCY = 2
+#Chance for a successful flint knapping. (1.0 = 100%, 0.4 = 40%, etc.)
+#Range: 0.1 ~ 1.0
+FLINT_CHANCE = 0.6
+#Heal rate for bandages. Crude bandages are 50% less effective. (1.0 = 100%, 0.4 = 40%, etc.)
+#Range: 0.1 ~ 1.0
+HEAL_RATE = 0.14
+#Slowdown speed when using incorrect tool.
+#Range: 0.1 ~ 1.0
+SLOW_DOWN_SPEED = 0.4
+#Inverts blacklist to be whitelist. This allows for immersion mods/modpacks to only allow tools or armor for specific mods. Default: false
+INVERT_LIST_TO_WHITELIST = false
+#List of mods that tools will become wet noodles. If inverted, acts as a whitelist. Default: [""]
+mods = []
+#List of individual tools that will always work. Format tooltype-modid:item Default: [""]
+items = []
+#Used to dump log info for Survivalist Essentials Modpack. Ignore.
+LOG_MODPACK_DATA = false
+#List of mods that have blocks that are generally decorative in nature and require no tool for harvesting blocks. Default: ["comforts"]
+blockmods = ["comforts"]
+#Hunger penalty feature. If after dying, player is rewarded with reduced hunger levels.
+ENABLE_HUNGER_PENALTY = false
+#Hunger value after death in half shanks. (0 = Really? That's just cruel, 20 = No penalty.)
+#Range: 0 ~ 20
+HUNGER = 8
+#Saturation value after death. Range 0 to 20.
+#Range: 0 ~ 20
+SATURATION = 0
+#Health penalty feature. If after dying, player is rewarded with reduced health levels.
+ENABLE_HEALTH_PENALTY = false
+#Health value after death in half hearts.
+#Range: 0.5 ~ 100.0
+HEALTH = 6.0
+#Health penalty in half hearts player starts with. Reduces total starting health by this amount.
+#Range: 0.0 ~ 19.0
+STARTING_HEALTH_PENALTY = 0.0
+#The amount of generic damage in half hearts a disabled tool, or bare hand should do. Default 0
+#Range: 0 ~ 4
+GENERIC_DAMAGE = 0
+#List of mods that armor will not be equipable for. If inverted, acts as a whitelist. Default: [""]
+armormods = []
+#List of individual armor items that will be disabled. If inverted, acts as a whitelist. Format modid:item Default: [""]
+armor = []
+#List of tags when added to tools or armor will be disabled. If inverted, acts as a whitelist.["blacklist_tools"]
+tag = ["blacklist_tools"]
+
