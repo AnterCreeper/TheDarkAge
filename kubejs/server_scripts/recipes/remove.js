@@ -65,6 +65,10 @@ ServerEvents.recipes(event => {
         {
 		id: "survivalistessentials:string_from_plant_string"
         });
+        event.remove(
+        {
+		id: "tconstruct:common/flint"
+        });
 
         event.remove(
         {
@@ -73,6 +77,10 @@ ServerEvents.recipes(event => {
         event.remove(
         {
 		id: "create:crafting/materials/andesite_alloy"
+        });
+        event.remove(
+        {
+		id: "create:crafting/appliances/slime_ball"
         });
 
 })

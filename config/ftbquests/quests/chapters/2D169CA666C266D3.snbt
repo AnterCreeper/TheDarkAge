@@ -37,6 +37,48 @@
 			x: -3.0d
 			y: -3.5d
 		}
+		{
+			id: "54F1399D75D229CF"
+			tasks: [{
+				id: "6D8CD576E9F076C6"
+				item: {
+					Count: 1b
+					id: "createsifter:string_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			id: "0CF9C6D923E3D4F4"
+			tasks: [{
+				id: "634AA7FC395C8236"
+				item: {
+					Count: 1b
+					id: "createsifter:andesite_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			id: "34E36465DCE521BA"
+			tasks: [{
+				id: "7080DCE3F03BCBF2"
+				item: {
+					Count: 1b
+					id: "createsifter:zinc_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
 	]
 	title: "卷三 机械时代"
 }

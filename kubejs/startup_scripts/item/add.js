@@ -1,5 +1,5 @@
 StartupEvents.registry("item", event => {
-	event.create("cooked_kernels")..maxStackSize(16).food(food => {
+	event.create("cooked_kernels").maxStackSize(16).food(food => {
 	food
     		.hunger(2)
     		.saturation(3)

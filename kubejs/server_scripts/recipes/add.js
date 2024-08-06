@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
 	event.campfireCooking('minecraft:torch', 'minecraft:stick');
+	event.campfireCooking('minecraft:bread', 'farmersdelight:wheat_dough');
 
 	event.recipes.farmersdelight.cooking(
 	    ["ratatouille:wheat_kernels"],
@@ -23,7 +24,7 @@ ServerEvents.recipes(event => {
 	[
 		'ratatouille:wheat_kernels',
 		Item.of('survivalistessentials:mortar_and_pestle').ignoreNBT()
-	]).damageIngredient(Item.of('survivalistessentials:mortar_and_pestle').ignoreNBT());
+	]).keepIngredient(Item.of('survivalistessentials:mortar_and_pestle').ignoreNBT());
 
 	let wheat_modlist = [
 		'farmersdelight',
@@ -155,5 +156,21 @@ ServerEvents.recipes(event => {
         },
         'survivalistessentials:plant_string',
         'farmersdelight:rope');
+        event.replaceInput(
+        {
+                id: 'survivalistessentials:mortar_and_pestle'
+        },
+        'survivalistessentials:rock_stone',
+        'minecraft:flint');
+        event.replaceOutput(
+        {
+                id: 'survivalistessentials:flint_from_shards'
+        },
+	'minecraft:flint',
+        'minecraft:gravel');
 
+	event.recipes.create.milling(
+	'minecraft:gravel',
+	'minecraft:flint'
+	);
 })
