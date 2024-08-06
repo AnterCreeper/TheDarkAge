@@ -6,6 +6,37 @@
 	id: "2D169CA666C266D3"
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "22AC50C57BB78BCA"
+			tasks: [{
+				id: "5A0C563083E4EBF4"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			id: "6D3F1E319EE01D61"
+			tasks: [{
+				id: "73EE41635F7B70E1"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			id: "0F9268365443EE81"
+			tasks: [{
+				id: "5CA0870C9ADB1259"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+	]
 	title: "卷三 机械时代"
 }

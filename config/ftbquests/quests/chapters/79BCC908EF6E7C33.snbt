@@ -15,18 +15,19 @@
 				item: "survivalistessentials:flint_shard"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -0.5d
+			x: -6.0d
+			y: -1.5d
 		}
 		{
 			id: "76405FEEF270C8E8"
+			size: 2.0d
 			tasks: [{
 				id: "7597EEEF66031A99"
 				item: "survivalistessentials:rock_stone"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -0.5d
+			x: -6.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -45,28 +46,19 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: -0.5d
+			x: -6.0d
+			y: 0.5d
 		}
 		{
+			dependencies: ["049AD2EEB6E516CE"]
 			id: "4DC1897E69D855F9"
 			tasks: [{
 				id: "75ECCE7B7C577F19"
 				item: "survivalistessentials:plant_fiber"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -0.5d
-		}
-		{
-			id: "57EC72B875D9FCB2"
-			tasks: [{
-				id: "17E63DEE07A66477"
-				item: "survivalistessentials:plant_string"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -2.0d
+			x: -6.0d
+			y: 2.5d
 		}
 		{
 			id: "2A2C4B56555887ED"
@@ -75,10 +67,11 @@
 				item: "minecraft:stick"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 1.5d
+			x: -3.5d
+			y: -0.5d
 		}
 		{
+			dependencies: ["13612717401E2427"]
 			id: "05723DF4AFEB73A5"
 			tasks: [{
 				id: "1665A69EBE8E82B4"
@@ -91,61 +84,84 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -3.0d
+			x: -7.5d
+			y: 6.5d
 		}
 		{
-			id: "3CE5F58AB6E085AF"
+			dependencies: ["4DC1897E69D855F9"]
+			id: "13612717401E2427"
 			tasks: [{
-				id: "6AADF19DE43AFE31"
-				item: {
-					Count: 1b
-					id: "survivalistessentials:crude_saw"
-					tag: {
-						Damage: 0
-					}
-				}
+				id: "6E878750AD4CD716"
+				item: "farmersdelight:rope"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -1.0d
+			x: -8.5d
+			y: 4.0d
 		}
 		{
-			id: "52B8A13661D56C38"
+			id: "04B445C1FFB03F43"
 			tasks: [{
-				id: "7EB55DD5F92849A1"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "minecraft:planks"
-					}
-				}
-				title: "Any #minecraft:planks"
+				id: "2AD6E3FAFB411452"
+				item: "minecraft:white_bed"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -2.0d
+			x: -9.0d
+			y: 0.0d
 		}
 		{
-			id: "19E8FE0A06685FBB"
+			id: "3F470ADE65FED510"
 			tasks: [{
-				id: "46BD7059D9FA055E"
+				id: "6C1AFEC47D10CFB3"
+				item: "totemic:tipi"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["13612717401E2427"]
+			id: "48611A758A65B9C9"
+			tasks: [{
+				id: "422B338C283BDBEF"
 				item: "survivalistessentials:crude_bandage"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 1.5d
+			x: -10.0d
+			y: 5.5d
 		}
 		{
-			id: "005978D890A0A041"
+			dependencies: ["76405FEEF270C8E8"]
+			id: "229CE0F4A6478D1B"
 			tasks: [{
-				id: "13B0CAA601290AD0"
-				item: "survivalistessentials:bandage"
+				id: "54CAA64A5FAE95E9"
+				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 1.5d
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["05723DF4AFEB73A5"]
+			id: "73DA83C8F60F3A16"
+			size: 3.0d
+			tasks: [{
+				id: "7C87F848867C3A20"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["4DC1897E69D855F9"]
+			id: "6C46BC205BAA9A0D"
+			tasks: [{
+				id: "6DE239EA62D76321"
+				item: "farmersdelight:canvas"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.5d
 		}
 	]
 	title: "卷一 开天辟地"
