@@ -83,5 +83,43 @@ ServerEvents.recipes(event => {
 		id: "create:crafting/appliances/slime_ball"
         });
 
-})
+	let createaddition_idlist = [
+		"createaddition:compacting/seed_oil",
+		"createaddition:mixing/bioethanol",
+		"createaddition:liquid_burning/plantoil",
+		"createaddition:liquid_burning/gasoline",
+		"createaddition:liquid_burning/ethanol",
+		"createaddition:liquid_burning/diesel",
+		"createaddition:liquid_burning/crude_oil",
+		"createaddition:liquid_burning/biofuel",
+		"createaddition:liquid_burning/biodiesel",
+		"createaddition:mixing/biomass_from_stick",
+		"createaddition:mixing/biomass_from_saplings",
+		"createaddition:mixing/biomass_from_plants",
+		"createaddition:mixing/biomass_from_plant_foods",
+		"createaddition:mixing/biomass_from_leaves",
+		"createaddition:mixing/biomass_from_honeycomb",
+		"createaddition:mixing/biomass_from_flowers",
+		"createaddition:mixing/biomass_from_crops"
+	];
+	for(let i of createaddition_idlist){
+                event.remove(
+                {
+                        id: `${i}`
+                });
+        };
+        event.remove(
+        {
+		output: "createaddition:seed_oil"
+        });
+        event.remove(
+        {
+		id: "createdieselgenerators:basin_fermenting/golden_apple"
+        });
+        event.remove(
+        {
+		id: "create:fr/tea"
+        });
 
+
+})

@@ -2,6 +2,20 @@ ServerEvents.recipes(event => {
 	event.campfireCooking('minecraft:torch', 'minecraft:stick');
 	event.campfireCooking('minecraft:bread', 'farmersdelight:wheat_dough');
 
+	event.custom({
+		"type": "lychee:item_inside",
+		"item_in": {
+			"item": "create:wheat_flour"
+		},
+		"block_in": {
+			"blocks": ["minecraft:water"]
+		},
+		"post": {
+			"type": "drop_item",
+			"item": "create:dough"
+		}
+	});
+
 	event.recipes.farmersdelight.cooking(
 	    ["ratatouille:wheat_kernels"],
 	    "kubejs:cooked_kernels",
@@ -171,57 +185,139 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.milling(
 	'minecraft:gravel',
-	'minecraft:flint'
+	'3x minecraft:flint'
 	);
 
 	event.custom(
 	{
 		"type": "createaddition:liquid_burning",
 		"input": {
-			"fluidTag": "createdieselgenerators:diesel",
+			"fluid": "createdieselgenerators:diesel",
 			"amount": 100
 		},
 		"burnTime": 15,
 		"superheated": true
 	});
+        event.custom(
+        {
+                "type": "tconstruct:melting_fuel",
+                "duration": 200,
+                "fluid": {
+                        "amount": 10,
+                        "fluid": "createdieselgenerators:diesel"
+                },
+                "temperature": 1500
+        });
+
 	event.custom(
 	{
 		"type": "createaddition:liquid_burning",
 		"input": {
-			"fluidTag": "createdieselgenerators:biodiesel",
+			"fluid": "createdieselgenerators:biodiesel",
 			"amount": 100
 		},
 		"burnTime": 15,
 		"superheated": true
 	});
+        event.custom(
+        {
+                "type": "tconstruct:melting_fuel",
+                "duration": 200,
+                "fluid": {
+                        "amount": 10,
+                        "fluid": "createdieselgenerators:biodiesel"
+                },
+                "temperature": 1500
+        });
+
 	event.custom(
 	{
 		"type": "createaddition:liquid_burning",
 		"input": {
-			"fluidTag": "createdieselgenerators:gasoline",
+			"fluid": "createdieselgenerators:gasoline",
 			"amount": 100
 		},
 		"burnTime": 8,
 		"superheated": true
 	});
+        event.custom(
+        {
+                "type": "tconstruct:melting_fuel",
+                "duration": 150,
+                "fluid": {
+                        "amount": 10,
+                        "fluid": "createdieselgenerators:gasoline"
+                },
+                "temperature": 1500
+        });
+
 	event.custom(
 	{
 		"type": "createaddition:liquid_burning",
 		"input": {
-			"fluidTag": "createdieselgenerators:plant_oil",
+			"fluid": "createdieselgenerators:plant_oil",
 			"amount": 100
 		},
 		"burnTime": 960,
 		"superheated": false
 	});
+        event.custom(
+        {
+		"type": "tconstruct:melting_fuel",
+		"duration": 96,
+		"fluid": {
+			"amount": 10,
+			"fluid": "createdieselgenerators:plant_oil"
+		},
+		"temperature": 1000
+        });
+
 	event.custom(
 	{
 		"type": "createaddition:liquid_burning",
 		"input": {
-			"fluidTag": "createdieselgenerators:crude_oil",
+			"fluid": "createdieselgenerators:crude_oil",
 			"amount": 100
 		},
 		"burnTime": 960,
 		"superheated": false
 	});
+        event.custom(
+        {
+		"type": "tconstruct:melting_fuel",
+		"duration": 96,
+		"fluid": {
+			"amount": 10,
+			"fluid": "createdieselgenerators:crude_oil"
+		},
+		"temperature": 1000
+        });
+
+	event.custom(
+	{
+		"type": "createaddition:liquid_burning",
+		"input": {
+			"fluid": "createdieselgenerators:ethanol",
+			"amount": 100
+		},
+		"burnTime": 480,
+		"superheated": false
+	});
+        event.custom(
+        {
+		"type": "tconstruct:melting_fuel",
+		"duration": 480,
+		"fluid": {
+			"amount": 100,
+			"fluid": "createdieselgenerators:ethanol"
+		},
+		"temperature": 600
+        });
+
+//	event.recipes.createDeploying(
+//	"minecraft:experience_bottle",
+//	[
+//		"minecraft:glass_bottle",
+//		"3x create:experience_nugget"
+//	]);
 })
