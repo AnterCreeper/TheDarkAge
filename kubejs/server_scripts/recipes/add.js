@@ -173,4 +173,55 @@ ServerEvents.recipes(event => {
 	'minecraft:gravel',
 	'minecraft:flint'
 	);
+
+	event.custom(
+	{
+		"type": "createaddition:liquid_burning",
+		"input": {
+			"fluidTag": "createdieselgenerators:diesel",
+			"amount": 100
+		},
+		"burnTime": 15,
+		"superheated": true
+	});
+	event.custom(
+	{
+		"type": "createaddition:liquid_burning",
+		"input": {
+			"fluidTag": "createdieselgenerators:biodiesel",
+			"amount": 100
+		},
+		"burnTime": 15,
+		"superheated": true
+	});
+	event.custom(
+	{
+		"type": "createaddition:liquid_burning",
+		"input": {
+			"fluidTag": "createdieselgenerators:gasoline",
+			"amount": 100
+		},
+		"burnTime": 8,
+		"superheated": true
+	});
+	event.custom(
+	{
+		"type": "createaddition:liquid_burning",
+		"input": {
+			"fluidTag": "createdieselgenerators:plant_oil",
+			"amount": 100
+		},
+		"burnTime": 960,
+		"superheated": false
+	});
+	event.custom(
+	{
+		"type": "createaddition:liquid_burning",
+		"input": {
+			"fluidTag": "createdieselgenerators:crude_oil",
+			"amount": 100
+		},
+		"burnTime": 960,
+		"superheated": false
+	});
 })

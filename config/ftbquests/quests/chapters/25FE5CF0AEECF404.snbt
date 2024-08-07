@@ -21,8 +21,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: -12.0d
+			x: 2.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["371994E6E615576A"]
@@ -38,8 +38,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: -12.5d
+			x: -0.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["5F3FDF03A5EAB173"]
@@ -49,8 +49,8 @@
 				item: "tconstruct:grout"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -8.0d
+			x: 0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["38F377D1B9F42F5F"]
@@ -60,19 +60,19 @@
 				item: "tconstruct:seared_brick"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -6.5d
+			x: -2.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["45A526CBB7FA7148"]
+			dependencies: ["15DFAE8AAFB49F84"]
 			id: "371994E6E615576A"
 			tasks: [{
 				id: "02B6B892D79A4AEB"
 				item: "tconstruct:pattern"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -14.5d
+			x: -1.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["791C51A33FE2B60A"]
@@ -82,8 +82,8 @@
 				item: "tconstruct:seared_melter"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -3.0d
+			x: -4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["791C51A33FE2B60A"]
@@ -93,8 +93,8 @@
 				item: "tconstruct:seared_heater"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -4.0d
+			x: -2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -108,8 +108,8 @@
 				id: "1F8AF62A45A261DC"
 				type: "advancement"
 			}]
-			x: 5.5d
-			y: -10.5d
+			x: 0.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6EA9B1FC785D37F5"]
@@ -119,8 +119,8 @@
 				item: "minecraft:wheat"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -9.5d
+			x: 3.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -133,8 +133,8 @@
 				item: "ratatouille:wheat_kernels"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -7.5d
+			x: 3.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -147,8 +147,8 @@
 				item: "create:wheat_flour"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -5.5d
+			x: 3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -162,8 +162,8 @@
 				item: "minecraft:bread"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 1.5d
+			x: 4.0d
+			y: 5.0d
 		}
 		{
 			id: "2F98CC23C52910B5"
@@ -172,8 +172,8 @@
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -3.5d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			id: "65C3412D2AB8E97D"
@@ -189,8 +189,8 @@
 				title: "Any #forge:tools/scavenging"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -8.5d
+			x: 5.5d
+			y: -5.0d
 		}
 		{
 			id: "09DD1B47C32F4CD9"
@@ -199,8 +199,8 @@
 				item: "survivalistessentials:mortar_and_pestle"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -6.5d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["371994E6E615576A"]
@@ -217,8 +217,8 @@
 				title: "Any #tconstruct:tables"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -12.5d
+			x: -3.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["09DD1B47C32F4CD9"]
@@ -228,8 +228,8 @@
 				item: "survivalistessentials:bandage"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -6.5d
+			x: 7.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7B4D46E98B3EFFB0"]
@@ -246,8 +246,8 @@
 				title: "Any #forge:dough"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -3.5d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2F98CC23C52910B5"]
@@ -257,8 +257,8 @@
 				item: "minecraft:campfire"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -2.0d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3A530E05423502B2"]
@@ -268,8 +268,8 @@
 				item: "minecraft:torch"
 				type: "item"
 			}]
-			x: 13.0d
-			y: -0.5d
+			x: 7.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6EA9B1FC785D37F5"]
@@ -279,8 +279,8 @@
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -9.0d
+			x: -2.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["5F3FDF03A5EAB173"]
@@ -290,8 +290,8 @@
 				item: "minecraft:brick"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -8.0d
+			x: -5.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2BD78BEFB8BCFBED"]
@@ -301,8 +301,8 @@
 				item: "farmersdelight:stove"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -5.0d
+			x: -6.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["791C51A33FE2B60A"]
@@ -312,8 +312,8 @@
 				item: "tconstruct:seared_table"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -3.5d
+			x: 0.5d
+			y: 0.0d
 		}
 		{
 			id: "06820A386DD084E1"
@@ -322,8 +322,8 @@
 				item: "tconstruct:blank_sand_cast"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -0.5d
+			x: -5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -345,8 +345,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.5d
+			x: -2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2BD78BEFB8BCFBED"]
@@ -356,8 +356,8 @@
 				item: "farmersdelight:cooking_pot"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -6.5d
+			x: -4.5d
+			y: -3.0d
 		}
 		{
 			id: "45A526CBB7FA7148"
@@ -373,9 +373,31 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: -17.0d
+			x: 1.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["45A526CBB7FA7148"]
+			id: "15DFAE8AAFB49F84"
+			tasks: [{
+				id: "1A265DECCE9FB651"
+				item: "minecraft:oak_planks"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["15DFAE8AAFB49F84"]
+			id: "74C670CB7CFB8E7E"
+			tasks: [{
+				id: "3D96980256878A4B"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -11.5d
 		}
 	]
-	title: "卷二 冶金时代"
+	title: "卷二 农人匠心"
 }

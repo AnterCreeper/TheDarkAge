@@ -15,8 +15,8 @@
 				item: "survivalistessentials:flint_shard"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -1.5d
+			x: -0.5d
+			y: -5.0d
 		}
 		{
 			id: "76405FEEF270C8E8"
@@ -26,8 +26,8 @@
 				item: "survivalistessentials:rock_stone"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -3.5d
+			x: -1.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -46,8 +46,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: 0.5d
+			x: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["049AD2EEB6E516CE"]
@@ -57,8 +57,8 @@
 				item: "survivalistessentials:plant_fiber"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.5d
+			x: -0.5d
+			y: -1.0d
 		}
 		{
 			id: "2A2C4B56555887ED"
@@ -67,8 +67,8 @@
 				item: "minecraft:stick"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -0.5d
+			x: 1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["13612717401E2427"]
@@ -84,8 +84,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 6.5d
+			x: -2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4DC1897E69D855F9"]
@@ -95,8 +95,8 @@
 				item: "farmersdelight:rope"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 4.0d
+			x: -3.0d
+			y: 0.5d
 		}
 		{
 			id: "04B445C1FFB03F43"
@@ -105,8 +105,8 @@
 				item: "minecraft:white_bed"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 0.0d
+			x: 3.0d
+			y: -1.5d
 		}
 		{
 			id: "3F470ADE65FED510"
@@ -115,8 +115,8 @@
 				item: "totemic:tipi"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 2.0d
+			x: 3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["13612717401E2427"]
@@ -126,8 +126,8 @@
 				item: "survivalistessentials:crude_bandage"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 5.5d
+			x: -4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["76405FEEF270C8E8"]
@@ -137,8 +137,8 @@
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -2.0d
+			x: -3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["05723DF4AFEB73A5"]
@@ -149,8 +149,8 @@
 				item: "minecraft:oak_log"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 7.5d
+			x: 0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4DC1897E69D855F9"]
@@ -160,8 +160,41 @@
 				item: "farmersdelight:canvas"
 				type: "item"
 			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17FEED7EEBE203A9"]
+			id: "1CA127D231781892"
+			tasks: [{
+				id: "30F60D8B10ECE381"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
 			x: -2.5d
-			y: 4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1CA127D231781892"]
+			id: "3D7D01FA5BD08AD1"
+			tasks: [{
+				id: "624DB3F500FBFD64"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6C46BC205BAA9A0D"]
+			id: "4D1A36C62E9AB58D"
+			tasks: [{
+				id: "4F64AE334C50B9B3"
+				item: "survivalistessentials:cloth"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
 		}
 	]
 	title: "卷一 开天辟地"
