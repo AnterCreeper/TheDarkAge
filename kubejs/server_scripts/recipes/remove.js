@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
 		"createaddition:liquid_burning/crude_oil",
 		"createaddition:liquid_burning/biofuel",
 		"createaddition:liquid_burning/biodiesel",
-		"createaddition:mixing/biomass_from_stick",
+		"createaddition:mixing/biomass_from_sticks",
 		"createaddition:mixing/biomass_from_saplings",
 		"createaddition:mixing/biomass_from_plants",
 		"createaddition:mixing/biomass_from_plant_foods",
@@ -119,4 +119,17 @@ ServerEvents.recipes(event => {
 		id: "create:fr/tea"
         });
 
+        event.remove(
+        {
+		id: "eidolon:pewter_blend"
+        });
+        event.remove(
+        {
+		input: "eidolon:pewter_blend"
+        });
+
+	event.remove(
+	{
+		id: "minecraft:paper"
+	});
 })
