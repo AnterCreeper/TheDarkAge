@@ -8,7 +8,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["7D18C3DC24482732"]
 			description: [
 				"灾厄村民认为Steve应为各种事件的发生负责。"
 				"最近的一些情报表示，他们展开了一项刺杀行动，"
@@ -31,62 +30,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["7D18C3DC24482732"]
-			dependency_requirement: "one_completed"
-			description: ["旅行中必不可少的好帮手"]
-			id: "45AEBC8128D403AF"
-			rewards: [{
-				id: "339828D77F7CF07A"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "56C227F3B139C3BF"
-				item: "backpacked:backpack"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -2.5d
-		}
-		{
-			description: [""]
-			icon: {
-				Count: 1b
-				id: "minecraft:diamond_sword"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "7D18C3DC24482732"
-			rewards: [
-				{
-					id: "252B90CD7261B05A"
-					item: "solcarrot:food_book"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "2E27FEB404A4B62C"
-					item: "minecraft:baked_potato"
-					type: "item"
-				}
-				{
-					id: "400E7B6D691B46CC"
-					item: "comforts:sleeping_bag_red"
-					type: "item"
-				}
-			]
-			tasks: [{
-				dimension: "minecraft:overworld"
-				id: "7C2614119312D33F"
-				type: "dimension"
-			}]
-			title: "始"
-			x: 0.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["7D18C3DC24482732"]
 			description: [
 				"是时候招募一些警卫村民和黏土傀儡"
 				"以抵抗灾厄势力日益强大的攻势"
@@ -106,92 +49,6 @@
 			}]
 			title: "招募援军"
 			x: 3.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["7D18C3DC24482732"]
-			description: [
-				"有垃圾，就要丢垃圾桶"
-				"可不能随地乱丢"
-			]
-			id: "1BB9C7234F658C09"
-			rewards: [{
-				id: "5AC61E6BD5D17B20"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "25C7E9976455C035"
-				item: "decoration_delight:trash_bin"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["7D18C3DC24482732"]
-			description: ["开启一段新的旅程"]
-			id: "11AE962FAE0A48CF"
-			rewards: [{
-				id: "37F1201F593DE997"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "2F65BC6CD7633DFD"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "smallships:ships"
-					}
-				}
-				title: "Any #smallships:ships"
-				type: "item"
-			}]
-			title: "扬帆远航"
-			x: -3.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["7D18C3DC24482732"]
-			description: ["带上你的爱狗，开展一场酣畅淋漓的滑雪~"]
-			id: "303EFF0028AB8E2C"
-			rewards: [{
-				id: "187712A8EC7CD99F"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "0B8202B667675F6D"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "snowyspirit:sleds"
-					}
-				}
-				title: "Any #snowyspirit:sleds"
-				type: "item"
-			}]
-			title: "雪橇"
-			x: -3.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["7D18C3DC24482732"]
-			id: "2949C028899B5511"
-			rewards: [{
-				id: "060C09E51D3F87C6"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "26513D4F94B3C145"
-				item: "astikorcarts:supply_cart"
-				type: "item"
-			}]
-			x: -1.5d
 			y: -0.5d
 		}
 		{
@@ -357,17 +214,6 @@
 			title: "图腾"
 			x: -3.0d
 			y: 1.5d
-		}
-		{
-			dependencies: ["7D18C3DC24482732"]
-			id: "7BE73F1693FF2E4E"
-			tasks: [{
-				id: "792664DBDA038D74"
-				item: "paraglider:paraglider"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -2.5d
 		}
 	]
 	title: "始"

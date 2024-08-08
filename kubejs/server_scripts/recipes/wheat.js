@@ -1,5 +1,13 @@
 ServerEvents.recipes(event => {
-	event.campfireCooking('minecraft:bread', 'farmersdelight:wheat_dough');
+	event.custom({
+		"type": "minecraft:campfire_cooking",
+		"cookingtime": 600,
+		"experience": 0.0,
+		"ingredient": {
+			"item": "farmersdelight:wheat_dough"
+		},
+		"result": "minecraft:bread"
+	});
 
 	event.custom({
 		"type": "lychee:item_inside",

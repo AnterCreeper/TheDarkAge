@@ -80,4 +80,13 @@ ServerEvents.recipes(event => {
 	'3x minecraft:flint'
 	);
 
+	event.smelting(
+	'minecraft:andesite',
+	'minecraft:gravel'
+	);
+	event.blasting(
+	'minecraft:andesite',
+	'minecraft:gravel'
+	);
+
 })

@@ -398,6 +398,75 @@
 			x: 3.5d
 			y: -11.5d
 		}
+		{
+			id: "7BE73F1693FF2E4E"
+			tasks: [{
+				id: "792664DBDA038D74"
+				item: "paraglider:paraglider"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["7D18C3DC24482732"]
+			dependency_requirement: "one_completed"
+			description: ["旅行中必不可少的好帮手"]
+			id: "45AEBC8128D403AF"
+			rewards: [{
+				id: "339828D77F7CF07A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "56C227F3B139C3BF"
+				item: "backpacked:backpack"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["7D18C3DC24482732"]
+			id: "2949C028899B5511"
+			rewards: [{
+				id: "060C09E51D3F87C6"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "26513D4F94B3C145"
+				item: "astikorcarts:supply_cart"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["7D18C3DC24482732"]
+			description: ["带上你的爱狗，开展一场酣畅淋漓的滑雪~"]
+			id: "303EFF0028AB8E2C"
+			rewards: [{
+				id: "187712A8EC7CD99F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0B8202B667675F6D"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "snowyspirit:sleds"
+					}
+				}
+				title: "Any #snowyspirit:sleds"
+				type: "item"
+			}]
+			title: "雪橇"
+			x: 7.0d
+			y: -7.5d
+		}
 	]
 	title: "卷二 农人匠心"
 }
