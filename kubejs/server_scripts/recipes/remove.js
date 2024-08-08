@@ -1,7 +1,6 @@
 ServerEvents.recipes(event => {
 	let tools_outputlist = [
 		'minecraft:wooden_axe',
-		'minecraft:wooden_shovel',
 		'minecraft:wooden_hoe',
 		'minecraft:wooden_pickaxe',
 		'minecraft:wooden_sword',
@@ -11,7 +10,6 @@ ServerEvents.recipes(event => {
 		'minecraft:stone_pickaxe',
 		'minecraft:stone_sword',
 		'minecraft:iron_axe',
-		'minecraft:iron_shovel',
 		'minecraft:iron_hoe',
 		'minecraft:iron_pickaxe',
 		'minecraft:iron_sword',
@@ -120,6 +118,5 @@ ServerEvents.recipes(event => {
         {
 		id: "create:fr/tea"
         });
-
 
 })

@@ -1,4 +1,11 @@
 ServerEvents.recipes(event => {
+	event.replaceInput(
+	{
+		id: 'minecraft:iron_shovel'
+	},
+	'minecraft:iron_ingot',
+	'create:iron_sheet');
+
 	event.campfireCooking('minecraft:torch', 'minecraft:stick');
 	event.campfireCooking('minecraft:bread', 'farmersdelight:wheat_dough');
 

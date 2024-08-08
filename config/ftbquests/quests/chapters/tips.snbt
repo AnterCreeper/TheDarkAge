@@ -200,35 +200,6 @@
 				Count: 1b
 				id: "patchouli:guide_book"
 				tag: {
-					"patchouli:book": "apotheosis:apoth_chronicle"
-				}
-			}
-			id: "4DD0E151DE110A4A"
-			rewards: [{
-				id: "58CD3B2A5C65D081"
-				item: {
-					Count: 1b
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "apotheosis:apoth_chronicle"
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "004779BCC11EF19F"
-				type: "checkmark"
-			}]
-			title: "神化"
-			x: -3.0d
-			y: 1.5d
-		}
-		{
-			can_repeat: true
-			icon: {
-				Count: 1b
-				id: "patchouli:guide_book"
-				tag: {
 					"patchouli:book": "goety:black_book"
 				}
 			}
@@ -383,8 +354,20 @@
 				id: "2E9E31CB78FB0346"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 2.5d
+			title: "图腾"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7D18C3DC24482732"]
+			id: "7BE73F1693FF2E4E"
+			tasks: [{
+				id: "792664DBDA038D74"
+				item: "paraglider:paraglider"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
 		}
 	]
 	title: "始"

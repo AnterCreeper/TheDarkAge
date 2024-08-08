@@ -29,6 +29,8 @@
   "minecraft:energy_storage": null,
   "minecraft:progress": null,
   "jade:object_name": null,
+  "endertanks:hud": null,
+  "enderchests:hud": null,
   "goety:summon_owner": null,
   "goety:summon_lifespan": null,
   "goety:summon_breed": null,
@@ -41,6 +43,7 @@
   "create:backtank_capacity": null,
   "create:contraption_inv": null,
   "create:hide_boiler_tanks": null,
+  "endertanks:hud": null,
   "fruittrees:bee": null,
   "minecraft:brewing_stand": null,
   "minecraft:beehive": null,
@@ -58,5 +61,6 @@
   "minecraft:fluid": null,
   "minecraft:energy_storage": null,
   "minecraft:progress": null,
-  "jade:object_name": null
+  "jade:object_name": null,
+  "enderchests:hud": null
 }
