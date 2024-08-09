@@ -67,6 +67,10 @@ ServerEvents.recipes(event => {
         {
 		id: "tconstruct:common/flint"
         });
+        event.remove(
+        {
+                id: "create:milling/gravel"
+        });
 
         event.remove(
         {

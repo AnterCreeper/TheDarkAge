@@ -156,14 +156,13 @@
 				"3A530E05423502B2"
 			]
 			id: "5B0DDB1187A9F468"
-			size: 3.0d
 			tasks: [{
 				id: "7A67ECAEF2AA2022"
 				item: "minecraft:bread"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 5.0d
+			x: 3.0d
+			y: 4.0d
 		}
 		{
 			id: "2F98CC23C52910B5"
@@ -333,7 +332,6 @@
 				"6FD0E86688E57F9F"
 			]
 			id: "76D6793AF6CE6A9F"
-			size: 3.0d
 			tasks: [{
 				id: "030EC4F20D8FCE37"
 				item: {
@@ -345,8 +343,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: 5.0d
+			x: -1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2BD78BEFB8BCFBED"]
@@ -405,7 +403,7 @@
 				item: "paraglider:paraglider"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.0d
 			y: -13.5d
 		}
 		{
@@ -423,7 +421,7 @@
 				item: "backpacked:backpack"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.0d
 			y: -11.5d
 		}
 		{
@@ -439,7 +437,7 @@
 				item: "astikorcarts:supply_cart"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.0d
 			y: -9.5d
 		}
 		{
@@ -464,7 +462,7 @@
 				type: "item"
 			}]
 			title: "雪橇"
-			x: 7.0d
+			x: 6.0d
 			y: -7.5d
 		}
 		{
@@ -477,6 +475,27 @@
 			}]
 			x: 1.5d
 			y: -2.5d
+		}
+		{
+			dependencies: [
+				"76D6793AF6CE6A9F"
+				"5B0DDB1187A9F468"
+			]
+			id: "213975BF6C92BB6D"
+			size: 3.0d
+			tasks: [{
+				id: "1FDDE093423A0BFB"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "totemic:totempedia"
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
 		}
 	]
 	title: "卷二 农人匠心"
