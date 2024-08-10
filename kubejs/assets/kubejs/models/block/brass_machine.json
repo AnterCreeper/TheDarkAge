@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"textures": {
-		"0": "kubejs:brass_machine",
-		"particle": "kubejs:brass_machine"
+		"0": "kubejs:block/brass_machine",
+		"particle": "kubejs:block/brass_machine"
 	},
 	"elements": [
 		{

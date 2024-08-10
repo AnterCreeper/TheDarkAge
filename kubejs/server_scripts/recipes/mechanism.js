@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
 		" K "
 	],
 	{
-		K: "kubejs:kinetic_mechanism"
+		K: "kubejs:kinetic_mechanism",
 		A: "create:andesite_casing"
 	});
 })
