@@ -17,4 +17,42 @@ ServerEvents.recipes(event => {
 			"count": 2
 		}
 	});
+
+	event.create.mixing(
+	'kubejs:hot_pig_iron_ingot',
+	[
+		Fluid.of("tconstruct:molten_iron", 90),
+		"minecraft:rotten_flesh"
+	]).heated();
+	event.create.haunting(
+		"minecraft:rotten_flesh",
+		"#ratatouille:raw_meat"
+	);
+        event.custom({
+                "type": "lychee:item_inside",
+                "item_in": {
+                        "item": "kubejs:hot_pig_iron_ingot"
+                },
+                "block_in": {
+                        "blocks": ["minecraft:water"]
+                },
+                "post": {
+                        "type": "drop_item",
+                        "item": "tconstruct:pig_iron_ingot"
+                }
+        });
+	event.smelting('tconstruct:pig_iron_ingot', 'kubejs:hot_pig_iron_ingot');
+	event.blasting('tconstruct:pig_iron_ingot', 'kubejs:hot_pig_iron_ingot');
+
+	let inter = "kubejs:incomplete_hot_steel_ingot";
+	event.recipes.create.sequenced_assembly(
+        "kubejs:hot_steel_ingot",
+        "kubejs:hot_pig_iron_ingot",
+        [
+                event.recipes.createPressing(inter, inter),
+                event.recipes.createPressing(inter, inter),
+                event.recipes.createPressing(inter, inter),
+        ]).transitionalItem(inter).loops(2);
+	create.splashing('kubejs:steel_ingot', 'kubejs:hot_steel_ingot');
+
 })

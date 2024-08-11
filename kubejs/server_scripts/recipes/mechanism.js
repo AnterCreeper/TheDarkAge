@@ -41,10 +41,10 @@ ServerEvents.recipes(event => {
 	"kubejs:andesite_machine",
 	"create:andesite_casing",
 	[
+		event.recipes.createDeploying(inter, [inter, 'kubejs:advanced_kinetic_mechanism']),
 		event.recipes.createDeploying(inter, [inter, 'kubejs:iron_gear']),
-		event.recipes.createDeploying(inter, [inter, 'kubejs:iron_bolt']),
-		event.recipes.createDeploying(inter, [inter, 'kubejs:advanced_kinetic_mechanism'])
-	]);
+		event.recipes.createDeploying(inter, [inter, 'kubejs:iron_bolt'])
+	]).transitionalItem(inter).loops(1);
 
 	event.recipes.create.deploying('kubejs:sturdy_mechanism', ['kubejs:advanced_kinetic_mechanism', 'create:sturdy_sheet']);
 

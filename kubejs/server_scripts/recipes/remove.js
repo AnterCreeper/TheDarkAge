@@ -136,4 +136,17 @@ ServerEvents.recipes(event => {
 	{
 		id: "minecraft:paper"
 	});
+
+	event.remove(
+	{
+		id: "tconstruct:smeltery/alloys/molten_pig_iron"
+	});
+	event.remove(
+	{
+		id: "createaddition:compat/tconstruct/pig_iron"
+	});
+	event.remove(
+	{
+		id: "createaddition:compat/tconstruct/pig_iron_2"
+	});
 })
