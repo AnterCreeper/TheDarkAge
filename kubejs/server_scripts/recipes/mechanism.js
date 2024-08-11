@@ -25,4 +25,27 @@ ServerEvents.recipes(event => {
 		K: "kubejs:kinetic_mechanism",
 		A: "create:andesite_casing"
 	});
+
+	let inter = "kubejs:incomplete_advanced_kinetic_mechanism";
+	event.recipes.create.sequenced_assembly(
+	"kubejs:advanced_kinetic_mechanism",
+	"create:iron_sheet",
+	[
+		event.recipes.createDeploying(inter, [inter, 'kubejs:brass_gear']),
+		event.recipes.createDeploying(inter, [inter, 'kubejs:steel_bolt']),
+		event.recipes.createDeploying(inter, [inter, 'create:wrench']).keepHeldItem()
+	]).transitionalItem(inter).loops(2);
+
+	inter = "kubejs:incomplete_andesite_machine";
+	event.recipes.create.sequenced_assembly(
+	"kubejs:andesite_machine",
+	"create:andesite_casing",
+	[
+		event.recipes.createDeploying(inter, [inter, 'kubejs:iron_gear']),
+		event.recipes.createDeploying(inter, [inter, 'kubejs:iron_bolt']),
+		event.recipes.createDeploying(inter, [inter, 'kubejs:advanced_kinetic_mechanism'])
+	]);
+
+	event.recipes.create.deploying('kubejs:sturdy_mechanism', ['kubejs:advanced_kinetic_mechanism', 'create:sturdy_sheet']);
+
 })
