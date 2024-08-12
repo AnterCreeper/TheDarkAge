@@ -170,6 +170,55 @@
 			x: -3.0d
 			y: -5.5d
 		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1b
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "goety:black_book"
+				}
+			}
+			id: "04C1C0A94ADB9455"
+			rewards: [{
+				id: "2F993C5680E9067C"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "goety:black_book"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "243C62B75995FDB1"
+				title: "诡厄巫术"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -9.0d
+		}
+		{
+			id: "4C27FE401FD7EF6F"
+			tasks: [{
+				id: "14C374762E6C31E4"
+				item: "minecraft:budding_amethyst"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -7.0d
+		}
+		{
+			id: "7D1DE2981CB46CA5"
+			tasks: [{
+				id: "317840B13403C03E"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.5d
+		}
 	]
 	title: "卷三 机械时代"
 }

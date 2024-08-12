@@ -52,35 +52,6 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
-			icon: {
-				Count: 1b
-				id: "patchouli:guide_book"
-				tag: {
-					"patchouli:book": "goety:black_book"
-				}
-			}
-			id: "04C1C0A94ADB9455"
-			rewards: [{
-				id: "2F993C5680E9067C"
-				item: {
-					Count: 1b
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "goety:black_book"
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "243C62B75995FDB1"
-				title: "诡厄巫术"
-				type: "checkmark"
-			}]
-			x: -1.5d
-			y: 1.5d
-		}
-		{
 			icon: "create:wrench"
 			id: "79BCB8A213A28598"
 			rewards: [{

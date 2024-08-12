@@ -149,4 +149,36 @@ ServerEvents.recipes(event => {
 	{
 		id: "createaddition:compat/tconstruct/pig_iron_2"
 	});
+	event.remove(
+	{
+		id: "tconstruct:smeltery/alloys/molten_pewter"
+	});
+
+	let machines_idlist = [
+		'ratatouille:oven_fan',
+		'create:crafting/kinetics/mechanical_roller',
+		'create:crafting/kinetics/deployer',
+		'createaddition:crafting/rolling_mill',
+		'create:crafting/kinetics/mechanical_saw',
+		'ratatouille:thresher',
+		'create:crafting/kinetics/mechanical_bearing',
+		'create:crafting/kinetics/mechanical_piston',
+		'ratatouille:mechanical_demolder',
+		'create:crafting/kinetics/millstone',
+		'create:crafting/kinetics/mechanical_mixer',
+		'create:crafting/kinetics/mechanical_drill',
+		'create:crafting/kinetics/encased_fan',
+		'create:crafting/kinetics/mechanical_press',
+		'create:crafting/kinetics/cuckoo_clock',
+		'create:crafting/kinetics/rope_pulley',
+		'create:crafting/kinetics/gantry_carriage',
+		'createsifter:sifter'
+	];
+	for(let i of machines_idlist){
+                event.remove(
+                {
+                        id: `${i}`
+                });
+        };
+
 })

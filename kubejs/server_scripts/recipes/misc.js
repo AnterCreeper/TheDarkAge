@@ -80,4 +80,22 @@ ServerEvents.recipes(event => {
 	'3x minecraft:flint'
 	);
 
+	event.custom({
+		"type": "tconstruct:alloy",
+		"inputs": [
+          	{
+			"amount": 180,
+			"tag": "forge:molten_iron"
+		},
+		{
+			"amount": 90,
+			"tag": "forge:molten_lead"
+		}],
+		"result": {
+			"amount": 270,
+			"fluid": "tconstruct:molten_pewter"
+		},
+		"temperature": 800
+	});
+
 })

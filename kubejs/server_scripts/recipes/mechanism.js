@@ -17,13 +17,14 @@ ServerEvents.recipes(event => {
 	event.shaped(
 	"kubejs:andesite_machine",
 	[
-		" K ",
+		"RKR",
 		"KAK",
-		" K "
+		"RKR"
 	],
 	{
 		K: "kubejs:kinetic_mechanism",
-		A: "create:andesite_casing"
+		A: "create:andesite_casing",
+		B: "kubejs:iron_rod"
 	});
 
 	let inter = "kubejs:incomplete_advanced_kinetic_mechanism";
