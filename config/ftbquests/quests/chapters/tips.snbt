@@ -8,66 +8,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: [
-				"灾厄村民认为Steve应为各种事件的发生负责。"
-				"最近的一些情报表示，他们展开了一项刺杀行动，"
-				"所以遇到一些来历不明的商人，还是谨慎行事为好……"
-			]
-			icon: "minecraft:lead"
-			id: "17B4118A241652E3"
-			rewards: [{
-				id: "3EBBEA0E0F59FEAC"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "37EBBFB52BC6045E"
-				title: "了解"
-				type: "checkmark"
-			}]
-			title: "有内鬼，中止交易"
-			x: 1.5d
-			y: -0.5d
-		}
-		{
-			description: [
-				"是时候招募一些警卫村民和黏土傀儡"
-				"以抵抗灾厄势力日益强大的攻势"
-				"使用黏土和南瓜以召唤黏土傀儡"
-			]
-			icon: "minecraft:clay_ball"
-			id: "6DEA38D0C0769462"
-			rewards: [{
-				id: "5072A407FDDB90D6"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "7D6EC167C39C11C1"
-				title: "村民"
-				type: "checkmark"
-			}]
-			title: "招募援军"
-			x: 3.0d
-			y: -0.5d
-		}
-		{
-			icon: "create:wrench"
-			id: "79BCB8A213A28598"
-			rewards: [{
-				id: "4C42D23E9271F8B3"
-				item: "create:wrench"
-				type: "item"
-			}]
-			tasks: [{
-				id: "5938E12B20C24DA4"
-				title: "机械动力"
-				type: "checkmark"
-			}]
-			x: 1.5d
-			y: 1.5d
-		}
-		{
 			icon: "fruittrees:apple_sapling"
 			id: "262E878A3F7D857E"
 			rewards: [{
@@ -82,23 +22,6 @@
 			title: "妙趣果园"
 			x: 3.0d
 			y: 1.5d
-		}
-		{
-			can_repeat: true
-			icon: "tconstruct:materials_and_you"
-			id: "6083C29423B62821"
-			rewards: [{
-				id: "41BB30442F77951B"
-				item: "tconstruct:materials_and_you"
-				type: "item"
-			}]
-			tasks: [{
-				id: "2D7BD543BDC4DDB4"
-				type: "checkmark"
-			}]
-			title: "匠魂"
-			x: -3.0d
-			y: 3.5d
 		}
 		{
 			can_repeat: true
@@ -134,57 +57,6 @@
 			title: "植物魔法"
 			x: 1.5d
 			y: 3.5d
-		}
-		{
-			icon: "create_central_kitchen:cooking_guide"
-			id: "5FD37633C79BB6E0"
-			rewards: [{
-				id: "588285A6ECE74B35"
-				item: {
-					Count: 1b
-					id: "farmersdelight:skillet"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "5BAFB8953CF2B71B"
-				type: "checkmark"
-			}]
-			title: "农夫乐事"
-			x: 3.0d
-			y: 3.5d
-		}
-		{
-			can_repeat: true
-			icon: {
-				Count: 1b
-				id: "patchouli:guide_book"
-				tag: {
-					"patchouli:book": "totemic:totempedia"
-				}
-			}
-			id: "1585A86B46FAD42C"
-			rewards: [{
-				id: "4CA7073B7386ED78"
-				item: {
-					Count: 1b
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "totemic:totempedia"
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "2E9E31CB78FB0346"
-				type: "checkmark"
-			}]
-			title: "图腾"
-			x: -3.0d
-			y: 1.5d
 		}
 	]
 	title: "始"

@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
 	{
 		K: "kubejs:kinetic_mechanism",
 		A: "create:andesite_casing",
-		B: "kubejs:iron_rod"
+		R: "createaddition:iron_rod"
 	});
 
 	let inter = "kubejs:incomplete_advanced_kinetic_mechanism";

@@ -153,6 +153,30 @@ ServerEvents.recipes(event => {
 	{
 		id: "tconstruct:smeltery/alloys/molten_pewter"
 	});
+	event.remove(
+	{
+		id: "create:milling/calcite"
+	});
+	event.remove(
+	{
+		id: "ratatouille:salt"
+	});
+	event.remove(
+	{
+		id: "immersive_weathering:mulch_block"
+	});
+	event.remove(
+	{
+		id: "immersive_weathering:nulch_block"
+	});
+	event.remove(
+	{
+		id: "immersive_weathering:tuff"
+	});
+	event.remove(
+	{
+		id: "caverns_and_chasms:tuff"
+	});
 
 	let machines_idlist = [
 		'ratatouille:oven_fan',

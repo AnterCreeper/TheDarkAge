@@ -71,7 +71,7 @@
 				item: "tconstruct:pattern"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: -11.0d
 		}
 		{
@@ -102,11 +102,18 @@
 				"715CDE39A791F96C"
 			]
 			id: "6EA9B1FC785D37F5"
+			size: 2.0d
 			tasks: [{
-				advancement: "tconstruct:tools/tinker_tool"
-				criterion: ""
-				id: "1F8AF62A45A261DC"
-				type: "advancement"
+				id: "698235B44BFB2A04"
+				item: {
+					Count: 1b
+					id: "tconstruct:mattock"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+					}
+				}
+				type: "item"
 			}]
 			x: 0.5d
 			y: -7.0d

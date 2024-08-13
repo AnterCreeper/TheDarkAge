@@ -39,23 +39,10 @@ ServerEvents.recipes(event => {
 	'minecraft:grass',
 	'unusualend:chorus_petal');
 
-	event.shaped(
+	event.shapeless(
 	'farmersdelight:straw',
-        [
-                'FF'
-        ],
-        {
-                F: 'survivalistessentials:plant_fiber'
-        });
-	event.shaped(
-	'farmersdelight:straw',
-        [
-                'F',
-		'F'
-        ],
-        {
-                F: 'survivalistessentials:plant_fiber'
-        });
+	'2x survivalistessentials:plant_fiber',
+	);
         event.replaceInput(
         {
                 input: 'survivalistessentials:plant_string'
@@ -97,5 +84,16 @@ ServerEvents.recipes(event => {
 		},
 		"temperature": 800
 	});
+
+	event.replaceInput({
+		id: "supplementaries:soap"
+	},
+	"minecraft:porkchop",
+	"delightful:animal_fat"
+	);
+//	event.recipes.create.splashing(
+//	"supplementaries:ash",
+//	"immersive_weathering:ash_layer_block"
+//	);
 
 })

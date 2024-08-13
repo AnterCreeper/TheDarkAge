@@ -8,92 +8,52 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["03C4C3804E6878E7"]
 			id: "22AC50C57BB78BCA"
 			tasks: [{
 				id: "5A0C563083E4EBF4"
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -5.5d
+			x: -4.5d
+			y: -1.5d
 		}
 		{
+			dependencies: ["0E93B440CF109819"]
 			id: "6D3F1E319EE01D61"
 			tasks: [{
 				id: "73EE41635F7B70E1"
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -7.0d
+			x: -4.5d
+			y: -5.0d
 		}
 		{
+			dependencies: ["0AD72EBB47451150"]
 			id: "0F9268365443EE81"
 			tasks: [{
 				id: "5CA0870C9ADB1259"
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -1.0d
+			x: 4.0d
+			y: -0.5d
 		}
 		{
-			id: "2FAA44CDAA70D05F"
-			tasks: [{
-				id: "17102A2F4559AEB7"
-				item: "create:millstone"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 2.0d
-		}
-		{
+			dependencies: ["0E93B440CF109819"]
 			id: "7DC225FF2D84DD3C"
 			tasks: [{
 				id: "7777BDA36E479A3C"
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -7.0d
+			x: -6.5d
+			y: 0.5d
 		}
 		{
-			id: "2E75987E915918CB"
-			tasks: [{
-				id: "7FB83030650DDA25"
-				item: "minecraft:anvil"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -5.5d
-		}
-		{
-			id: "0C3EC98B67BCAE88"
-			tasks: [{
-				id: "064E39527D367C8C"
-				item: "create:iron_sheet"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -4.0d
-		}
-		{
-			id: "1CD22F931EBB5218"
-			tasks: [{
-				id: "7DB8C0E964B0DB5A"
-				item: "decoration_delight:trash_bin"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -6.0d
-		}
-		{
-			dependencies: [
-				"7DC225FF2D84DD3C"
-				"03C4C3804E6878E7"
-				"6D3F1E319EE01D61"
-			]
 			id: "0E93B440CF109819"
+			size: 2.0d
 			tasks: [{
 				id: "653FD14CC9B06929"
 				item: {
@@ -107,117 +67,391 @@
 				match_nbt: false
 				type: "item"
 			}]
-			x: -2.0d
-			y: -9.0d
+			x: -8.0d
+			y: -6.0d
 		}
 		{
+			dependencies: ["0E93B440CF109819"]
 			id: "03C4C3804E6878E7"
 			tasks: [{
 				id: "692D8F5611B1E66A"
 				item: "minecraft:andesite"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -7.0d
+			x: -6.0d
+			y: -3.0d
 		}
 		{
+			dependencies: ["419E83954E8812B2"]
 			id: "5F8680941A44D85A"
 			tasks: [{
 				id: "3EC30D2834F22171"
 				item: "kubejs:brass_bolt"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -4.0d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
+			dependencies: ["7DC225FF2D84DD3C"]
 			id: "419E83954E8812B2"
 			tasks: [{
 				id: "531EFA082093F481"
 				item: "createaddition:brass_rod"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -5.5d
+			x: -4.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["22AC50C57BB78BCA"]
 			id: "0C68017B92BDDBFA"
 			tasks: [{
 				id: "2D35941E49923EE9"
 				item: "create:cogwheel"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: -2.0d
+			y: -1.5d
 		}
 		{
+			dependencies: [
+				"0C68017B92BDDBFA"
+				"5F8680941A44D85A"
+			]
 			id: "1DB7E3FDB5320ABB"
 			tasks: [{
 				id: "12A94A322E33C532"
 				item: "kubejs:kinetic_mechanism"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.5d
+			x: -0.5d
+			y: -0.5d
 		}
 		{
+			dependencies: ["7DC225FF2D84DD3C"]
 			id: "18BBA0E6586C26F0"
 			tasks: [{
 				id: "4F126BCE7833D087"
 				item: "kubejs:brass_gear"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -5.5d
+			x: -6.5d
+			y: 3.5d
 		}
 		{
-			can_repeat: true
-			icon: {
-				Count: 1b
-				id: "patchouli:guide_book"
-				tag: {
-					"patchouli:book": "goety:black_book"
-				}
-			}
-			id: "04C1C0A94ADB9455"
-			rewards: [{
-				id: "2F993C5680E9067C"
+			dependencies: ["6D3F1E319EE01D61"]
+			id: "6ACB8C7F60D730ED"
+			tasks: [{
+				id: "587A5AF07C4917C7"
+				item: "createaddition:iron_rod"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["22AC50C57BB78BCA"]
+			id: "29E24554350B65D3"
+			tasks: [{
+				id: "784B31427F5661DB"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"1DB7E3FDB5320ABB"
+				"29E24554350B65D3"
+				"6ACB8C7F60D730ED"
+			]
+			id: "0AD72EBB47451150"
+			size: 2.0d
+			tasks: [{
+				id: "2C6D3D5B6128DDE5"
+				item: "kubejs:andesite_machine"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6453B66A6C0DEFE4"]
+			id: "623242C3F608D9D8"
+			tasks: [{
+				id: "62BC9614B6D59D65"
+				item: "minecraft:rotten_flesh"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"623242C3F608D9D8"
+				"6723434176016320"
+				"493BFABFC1D0A022"
+			]
+			id: "1A0FF6D981ED9599"
+			tasks: [{
+				id: "34D52B37F8122E98"
+				item: "tconstruct:pig_iron_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1A0FF6D981ED9599"
+				"0F9268365443EE81"
+				"0ACF50F4712591C1"
+				"12FD60576821CDA7"
+			]
+			id: "799D83F47EE4B672"
+			tasks: [{
+				id: "6281188E4C9A2217"
+				item: "kubejs:hot_steel_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0F9268365443EE81"]
+			id: "6B2437FE4C65C1B0"
+			tasks: [{
+				id: "4B0732ACB9CC76DF"
+				item: "createdieselgenerators:plant_oil_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0AD72EBB47451150"]
+			id: "6723434176016320"
+			tasks: [{
+				id: "6AEA642DF14A5C57"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"6B2437FE4C65C1B0"
+				"799D83F47EE4B672"
+			]
+			id: "1F61FE62C1F7CB11"
+			tasks: [{
+				id: "02983E5BC6AD59D5"
+				item: "kubejs:steel_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1F61FE62C1F7CB11"]
+			id: "62889EBCD34CC2FA"
+			tasks: [{
+				id: "75E958490F5D7CAB"
+				item: "kubejs:steel_bolt"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"18BBA0E6586C26F0"
+				"62889EBCD34CC2FA"
+				"6BBCF923EC01042A"
+			]
+			id: "7550988D32BA27B6"
+			tasks: [{
+				id: "78190C54D556B8C3"
+				item: "kubejs:advanced_kinetic_mechanism"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0AD72EBB47451150"]
+			id: "6BBCF923EC01042A"
+			tasks: [{
+				id: "69479A6DD86534AA"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4EA00DC97A4A2984"]
+			id: "0ACF50F4712591C1"
+			tasks: [{
+				id: "21374837398DB6D2"
+				item: "kubejs:borax"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6453B66A6C0DEFE4"]
+			id: "493BFABFC1D0A022"
+			tasks: [{
+				id: "26B62B3FF3C01C72"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			id: "4EA00DC97A4A2984"
+			tasks: [{
+				id: "26F3B247A5E7D702"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6453B66A6C0DEFE4"]
+			id: "52A3822ACBF92006"
+			tasks: [{
+				id: "2DD5A4D6D5B73DF4"
+				item: "minecraft:bone"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["52A3822ACBF92006"]
+			id: "545F94BFB08E63EF"
+			tasks: [{
+				id: "34E541BBF5300AD3"
+				item: "eidolon:enchanted_ash"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -4.0d
+		}
+		{
+			id: "5CA4F4A47527F2D6"
+			tasks: [{
+				id: "46D97C12D1E3D8AD"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"5CA4F4A47527F2D6"
+				"545F94BFB08E63EF"
+				"4ED2E64F10FB7B27"
+			]
+			id: "2D26548B4A8A002E"
+			tasks: [{
+				id: "128B6701BE3CD977"
+				item: "eidolon:sulfur"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"22315A3984146A6D"
+				"2D26548B4A8A002E"
+			]
+			id: "0317F4095A08204A"
+			tasks: [{
+				id: "0AA6663A13DE6CFC"
+				item: "kubejs:rubber"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			id: "22315A3984146A6D"
+			tasks: [{
+				id: "6185EC73F2AC96F8"
 				item: {
 					Count: 1b
-					id: "patchouli:guide_book"
+					id: "itemfilters:tag"
 					tag: {
-						"patchouli:book": "goety:black_book"
+						value: "forge:slimeballs"
+					}
+				}
+				title: "Any #forge:slimeballs"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0317F4095A08204A"]
+			id: "12FD60576821CDA7"
+			tasks: [{
+				id: "10570861D5EA268F"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7550988D32BA27B6"]
+			id: "62D3DF515487241F"
+			size: 3.0d
+			tasks: [{
+				id: "0F32E29E63173FFA"
+				item: "create:cuckoo_clock"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 8.0d
+		}
+		{
+			id: "4ED2E64F10FB7B27"
+			tasks: [{
+				id: "3F5205CED0E40E57"
+				item: "eidolon:crucible"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			id: "6453B66A6C0DEFE4"
+			size: 2.0d
+			tasks: [{
+				id: "4A96ABFACC7CF5C1"
+				item: {
+					Count: 1b
+					id: "tconstruct:cleaver"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
 					}
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "243C62B75995FDB1"
-				title: "诡厄巫术"
-				type: "checkmark"
-			}]
-			x: 3.5d
-			y: -9.0d
-		}
-		{
-			id: "4C27FE401FD7EF6F"
-			tasks: [{
-				id: "14C374762E6C31E4"
-				item: "minecraft:budding_amethyst"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -7.0d
-		}
-		{
-			id: "7D1DE2981CB46CA5"
-			tasks: [{
-				id: "317840B13403C03E"
-				item: "minecraft:amethyst_shard"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -5.5d
+			x: 9.5d
+			y: -7.5d
 		}
 	]
 	title: "卷三 机械时代"

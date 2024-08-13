@@ -6,6 +6,71 @@
 	id: "69DEC91CE1EDDCB3"
 	order_index: 4
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "7A4415053EE28BBD"
+			size: 2.0d
+			tasks: [{
+				id: "5A271B6355221A75"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:limeblock"
+					}
+				}
+				title: "Any #kubejs:limeblock"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7A4415053EE28BBD"]
+			id: "76135CDDEDD688F0"
+			tasks: [{
+				id: "6E03C7094C7FA167"
+				item: "kubejs:limestone"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["76135CDDEDD688F0"]
+			id: "1AAFF43CFC714C6D"
+			tasks: [{
+				id: "5CE056E0617122B3"
+				item: "kubejs:quicklime"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			id: "028C69736DE511E3"
+			tasks: [{
+				id: "5D93C723AB7E92BD"
+				item: "immersive_weathering:ash_layer_block"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"028C69736DE511E3"
+				"1AAFF43CFC714C6D"
+			]
+			id: "702C4CB6C819C188"
+			tasks: [{
+				id: "35DDEC80BD36A714"
+				item: "kubejs:caustic_soda_solution_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.0d
+		}
+	]
 	title: "卷四 蒸汽轰鸣"
 }

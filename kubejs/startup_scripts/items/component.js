@@ -8,8 +8,20 @@ StartupEvents.registry("item", event => {
 	event.create("diamond_gear");
 	event.create("iron_bolt");
 	event.create("iron_gear");
-	event.create("obsidian_bolt");
-	event.create("obsidian_gear");
+	event.create("hepatizon_bolt");
+	event.create("hepatizon_gear");
+	event.create("hepatizon_rod");
+        event.create("steel_nugget");
+        event.create("steel_sheet");
+        event.create("steel_rod");
 	event.create("steel_bolt");
 	event.create("steel_gear");
+	event.create("tungsten_carbide_bolt");
+	event.create("tungsten_carbide_teeth");
+	event.create("fire_clay_sheet");
+	event.create("burnt_fire_clay_sheet");
+        event.create("drill");
+        event.create("buzzsaw");
+        event.create("wooden_propeller");
+        event.create("enderium_tube");
 })

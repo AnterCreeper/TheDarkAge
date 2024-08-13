@@ -106,7 +106,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			id: "3F470ADE65FED510"
@@ -116,7 +116,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -7.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["13612717401E2427"]
@@ -233,6 +233,38 @@
 			title: "始"
 			x: -1.0d
 			y: -9.0d
+		}
+		{
+			description: [
+				"灾厄村民认为Steve应为各种事件的发生负责。"
+				"最近的一些情报表示，他们展开了一项刺杀行动，"
+				"所以遇到一些来历不明的商人，还是谨慎行事为好……"
+			]
+			icon: "minecraft:lead"
+			id: "17B4118A241652E3"
+			rewards: [{
+				id: "3EBBEA0E0F59FEAC"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "37EBBFB52BC6045E"
+				title: "了解"
+				type: "checkmark"
+			}]
+			title: "有内鬼，中止交易"
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			id: "36FA970BDDEC10F5"
+			tasks: [{
+				id: "155040596F6CFB22"
+				item: "solcarrot:food_book"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.5d
 		}
 	]
 	title: "卷一 开天辟地"

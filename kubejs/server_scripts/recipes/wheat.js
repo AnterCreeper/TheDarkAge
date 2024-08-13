@@ -35,6 +35,7 @@ ServerEvents.recipes(event => {
 	"minecraft:wheat",
 	"#forge:tools/scavenging",
 	[
+		"farmersdelight:straw",
 		"ratatouille:wheat_kernels",
 		Item.of("ratatouille:wheat_kernels")
 		.withChance(0.5)

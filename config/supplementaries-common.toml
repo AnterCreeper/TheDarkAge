@@ -274,12 +274,12 @@
 	[building.ash]
 		enabled = false
 		#Burnable blocks will have a chance to create ash layers when burned
-		ash_from_fire = true
+		ash_from_fire = false
 		#Allows rain to wash away ash layers overtime
-		rain_wash_ash = true
+		rain_wash_ash = false
 
 		[building.ash.basalt_ash]
-			enabled = true
+			enabled = false
 			#Attempts at every patch to spawn 1 block. Increases average patch size
 			#Range: 1 ~ 1000
 			attempts_per_patch = 36

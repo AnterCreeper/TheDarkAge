@@ -1,9 +1,9 @@
 ServerEvents.recipes(event => {
-//	event.smithing(
-//	'ratatouille:oven_fan',
-//	'kubejs:andesite_machine',
-//	'kubejs:wooden_propeller'
-//	);
+	event.smithing(
+	'ratatouille:oven_fan',
+	'kubejs:andesite_machine',
+	'kubejs:wooden_propeller'
+	);
 	event.smithing(
 	'ratatouille:spreader',
 	'ratatouille:oven_fan',
@@ -113,4 +113,11 @@ ServerEvents.recipes(event => {
 	"minecraft:iron_nugget",
 	"minecraft:chain"
 	);
+	event.replaceInput({
+		id: "create:crafting/kinetics/empty_blaze_burner"
+	},
+	"create:iron_sheet",
+	"minecraft:iron_bars"
+	);
+
 })

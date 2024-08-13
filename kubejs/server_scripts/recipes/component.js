@@ -175,4 +175,15 @@ ServerEvents.recipes(event => {
 	event.recipes.create.cutting('2x kubejs:brass_bolt', 'createaddition:brass_rod');
 	event.recipes.create.cutting('2x kubejs:iron_bolt', 'createaddition:iron_rod');
 
+	event.shaped(
+	"kubejs:wooden_propeller",
+	[
+		" W ",
+		"WAW",
+		" W "
+	],
+	{
+		W: "#minecraft:planks",
+		A: "create:andesite_alloy"
+	});
 })
