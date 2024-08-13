@@ -72,7 +72,7 @@
 		#Range: 0 ~ 100
 		weight = 25
 		canBeWithered = true
-		enabled = true
+		enabled = false
 		#Range: 1 ~ 100
 		minGroupSizeRevenant = 5
 
@@ -106,7 +106,7 @@
 		#Range: 1 ~ 100
 		maxGroupSizeGhoul = 5
 		canBeWithered = true
-		enabled = true
+		enabled = false
 
 	["The Graveyard - Mob Spawning Config".reaper]
 		canBurnInSunlight = true
