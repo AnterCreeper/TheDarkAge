@@ -263,8 +263,8 @@
 				item: "kubejs:steel_bolt"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 5.5d
+			x: 1.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -278,8 +278,8 @@
 				item: "kubejs:advanced_kinetic_mechanism"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 5.5d
+			x: -1.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["0AD72EBB47451150"]
@@ -422,8 +422,8 @@
 				item: "create:cuckoo_clock"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 8.0d
+			x: 0.0d
+			y: 10.5d
 		}
 		{
 			id: "4ED2E64F10FB7B27"

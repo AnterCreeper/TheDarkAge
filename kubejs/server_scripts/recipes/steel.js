@@ -33,6 +33,13 @@ ServerEvents.recipes(event => {
 	event.recipes.create.splashing('tconstruct:pig_iron_ingot', 'kubejs:hot_pig_iron_ingot');
 
 	event.recipes.create.milling('9x kubejs:borax', 'minecraft:quartz');
+        event.shapeless(
+        '4x kubejs:borax',
+        [
+                'minecraft:quartz',
+                Item.of('survivalistessentials:mortar_and_pestle').ignoreNBT()
+        ]).keepIngredient(Item.of('survivalistessentials:mortar_and_pestle').ignoreNBT());
+
 	let inter = "kubejs:incomplete_hot_steel_ingot";
 	event.recipes.create.sequenced_assembly(
         "kubejs:hot_steel_ingot",

@@ -84,6 +84,23 @@ ServerEvents.recipes(event => {
 		},
 		"temperature": 800
 	});
+	event.custom({
+		"type": "tconstruct:alloy",
+		"inputs": [
+          	{
+			"amount": 90,
+			"tag": "forge:molten_steel"
+		},
+		{
+			"amount": 1000,
+			"tag": "tconstruct:molten_obsidian"
+		}],
+		"result": {
+			"amount": 90,
+			"fluid": "tconstruct:molten_hepatizon"
+		},
+		"temperature": 1400
+	});
 
 	event.replaceInput({
 		id: "supplementaries:soap"
@@ -91,9 +108,5 @@ ServerEvents.recipes(event => {
 	"minecraft:porkchop",
 	"delightful:animal_fat"
 	);
-//	event.recipes.create.splashing(
-//	"supplementaries:ash",
-//	"immersive_weathering:ash_layer_block"
-//	);
 
 })

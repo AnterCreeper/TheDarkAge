@@ -155,6 +155,10 @@ ServerEvents.recipes(event => {
 	});
 	event.remove(
 	{
+		id: "tconstruct:smeltery/alloys/molten_hepatizon"
+	});
+	event.remove(
+	{
 		id: "create:milling/calcite"
 	});
 	event.remove(
@@ -177,6 +181,10 @@ ServerEvents.recipes(event => {
 	{
 		id: "caverns_and_chasms:tuff"
 	});
+	event.remove(
+	{
+		id: "create:sequenced_assembly/precision_mechanism"
+	});
 
 	let machines_idlist = [
 		'ratatouille:oven_fan',
@@ -196,9 +204,29 @@ ServerEvents.recipes(event => {
 		'create:crafting/kinetics/cuckoo_clock',
 		'create:crafting/kinetics/rope_pulley',
 		'create:crafting/kinetics/gantry_carriage',
-		'createsifter:sifter'
+		'createsifter:sifter',
+		'create:crafting/kinetics/spout',
+		'create:crafting/kinetics/item_drain',
+		'createdieselgenerators:crafting/pumpjack_hole',
+		'create_things_and_misc:sprinkler_craft',
+		'create:crafting/kinetics/hose_pulley'
 	];
 	for(let i of machines_idlist){
+                event.remove(
+                {
+                        id: `${i}`
+                });
+        };
+
+	let material_idlist = [
+		'create:crushing/gravel',
+		'create:milling/granite',
+		'create:milling/diorite',
+		'create:mixing/andesite_alloy',
+		'create:crushing/tuff',
+		'create:crushing/tuff_recycling'
+	];
+	for(let i of material_idlist){
                 event.remove(
                 {
                         id: `${i}`

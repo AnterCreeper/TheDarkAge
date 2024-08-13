@@ -14,6 +14,18 @@ ServerEvents.recipes(event => {
 	event.custom({
 		"type": "tconstruct:melting",
 		"ingredient": {
+			"item": "kubejs:cobalt_powder"
+		},
+		"result": {
+			"amount": 10,
+			"fluid": "tconstruct:molten_cobalt"
+		},
+		"temperature": 950,
+		"time": 20
+	});
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": {
 			"item": "kubejs:amethyst_bronze_bolt"
 		},
 		"result": {
@@ -74,14 +86,14 @@ ServerEvents.recipes(event => {
 	event.custom({
 		"type": "tconstruct:melting",
 		"ingredient": {
-			"item": "kubejs:obsidian_bolt"
+			"item": "kubejs:hepatizon_bolt"
 		},
 		"result": {
 			"amount": 20,
-			"fluid": "tconstruct:molten_obsidian"
+			"fluid": "tconstruct:molten_hepatizon"
 		},
-		"temperature": 1000,
-		"time": 16
+		"temperature": 1400,
+		"time": 40
 	});
 	event.custom({
 		"type": "tconstruct:melting",
@@ -174,6 +186,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.cutting('2x kubejs:steel_bolt', 'kubejs:steel_rod');
 	event.recipes.create.cutting('2x kubejs:brass_bolt', 'createaddition:brass_rod');
 	event.recipes.create.cutting('2x kubejs:iron_bolt', 'createaddition:iron_rod');
+	event.recipes.create.cutting('2x kubejs:hepatizon_bolt', 'kubejs:hepatizon_rod');
 
 	event.shaped(
 	"kubejs:wooden_propeller",
@@ -186,4 +199,16 @@ ServerEvents.recipes(event => {
 		W: "#minecraft:planks",
 		A: "create:andesite_alloy"
 	});
+
+        event.recipes.create.sandpaper_polishing(
+        "kubejs:buzzsaw",
+        "kubejs:hepatizon_gear"
+        );
+	event.replaceInput({
+		id: "create:crafting/kinetics/whisk"
+	},
+	"create:iron_sheet",
+	"createaddition:iron_rod"
+	);
+
 })

@@ -120,4 +120,30 @@ ServerEvents.recipes(event => {
 	"minecraft:iron_bars"
 	);
 
+	event.smithing(
+	'create:spout',
+	'kubejs:copper_machine',
+	'minecraft:dried_kelp'
+	);
+	event.smithing(
+	'create:item_drain',
+	'kubejs:copper_machine',
+	'minecraft:iron_bars'
+	);
+	event.smithing(
+	'createdieselgenerators:pumpjack_hole',
+	'kubejs:copper_machine',
+	'create:propeller'
+	);
+	event.smithing(
+	'create_things_and_misc:sprinkler',
+	'kubejs:copper_machine',
+	'kubejs:wooden_propeller'
+	);
+	event.smithing(
+	'create:hose_pulley',
+	'kubejs:copper_machine',
+	'kubejs:rubber'
+	);
+
 })
