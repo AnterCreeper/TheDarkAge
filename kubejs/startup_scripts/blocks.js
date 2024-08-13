@@ -12,7 +12,7 @@ StartupEvents.registry("block", event => {
 	.requiresTool(true);
 
 	event.create("tungsten_mold", "basic")
-	.soundType("dirt")
+	.soundType("gravel")
 	.hardness(1)
 	.resistance(1)
 	.requiresTool(false);

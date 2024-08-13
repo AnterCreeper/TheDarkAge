@@ -1,4 +1,5 @@
 WorldgenEvents.add(event => {
+	const {anchors} = event;
 	event.addOre(ore => {
 //		ore.id = 'kubejs:ore_scheelite_gen'
 		ore.biomes = '#minecraft:is_end';
