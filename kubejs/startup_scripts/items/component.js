@@ -18,6 +18,7 @@ StartupEvents.registry("item", event => {
 	event.create("steel_gear");
 	event.create("tungsten_carbide_bolt");
 	event.create("tungsten_carbide_teeth");
+	event.create("tungsten_carbide_gear");
 	event.create("fire_clay_sheet");
 	event.create("burnt_fire_clay_sheet");
         event.create("drill");
