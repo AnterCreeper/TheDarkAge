@@ -13,9 +13,9 @@ StartupEvents.registry("item", event => {
 	event.create("hss_ingot");
 
         event.create("hot_pig_iron_ingot")
-	.tag('kubejs:hot_item_3');
+	.tag('kubejs:hot_item_0');
         event.create("incomplete_hot_steel_ingot")
-       	.tag('kubejs:hot_item_3');
-        event.create("hot_steel_ingot")
        	.tag('kubejs:hot_item_2');
+        event.create("hot_steel_ingot")
+       	.tag('kubejs:hot_item_1');
 })
