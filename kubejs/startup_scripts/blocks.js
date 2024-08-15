@@ -1,7 +1,6 @@
 StartupEvents.registry("block", event => {
 	event.create("steel_block", "basic")
 	.soundType("metal")
-	.tag('kubejs:hot_item_2')
 	.hardness(6)
 	.resistance(7)
 	.requiresTool(true);
