@@ -9,6 +9,7 @@
 	quests: [
 		{
 			dependencies: ["76405FEEF270C8E8"]
+			description: ["石子对准石头方块右键可以获得碎片"]
 			id: "17FEED7EEBE203A9"
 			tasks: [{
 				id: "3AE264348092FD0B"
@@ -20,6 +21,7 @@
 		}
 		{
 			dependencies: ["7D18C3DC24482732"]
+			description: ["可以在地上注意到石子"]
 			id: "76405FEEF270C8E8"
 			tasks: [{
 				id: "7597EEEF66031A99"

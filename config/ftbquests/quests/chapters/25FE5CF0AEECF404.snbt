@@ -11,13 +11,11 @@
 			dependencies: ["371994E6E615576A"]
 			id: "715CDE39A791F96C"
 			tasks: [{
-				id: "4CB404D0EA7CAB5B"
+				id: "1DF3A7236F2A9436"
 				item: {
 					Count: 1b
-					id: "tconstruct:tinker_station"
-					tag: {
-						texture: "minecraft:oak_planks"
-					}
+					id: "tconstruct:part_builder"
+					tag: { }
 				}
 				type: "item"
 			}]
@@ -28,13 +26,11 @@
 			dependencies: ["371994E6E615576A"]
 			id: "02908D74AA697D48"
 			tasks: [{
-				id: "241661A7F32A0DEB"
+				id: "454BB9163C8B822B"
 				item: {
 					Count: 1b
-					id: "tconstruct:part_builder"
-					tag: {
-						texture: "minecraft:oak_planks"
-					}
+					id: "tconstruct:tinker_station"
+					tag: { }
 				}
 				type: "item"
 			}]
@@ -212,15 +208,12 @@
 			dependencies: ["371994E6E615576A"]
 			id: "075A6006F9F81FF0"
 			tasks: [{
-				id: "78A525FDCA8D74C3"
+				id: "0542510EB01AC259"
 				item: {
 					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "tconstruct:tables"
-					}
+					id: "tconstruct:crafting_station"
+					tag: { }
 				}
-				title: "Any #tconstruct:tables"
 				type: "item"
 			}]
 			x: -3.5d
@@ -386,7 +379,14 @@
 			id: "15DFAE8AAFB49F84"
 			tasks: [{
 				id: "1A265DECCE9FB651"
-				item: "minecraft:oak_planks"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:planks"
+					}
+				}
+				title: "Any #minecraft:planks"
 				type: "item"
 			}]
 			x: -0.5d
@@ -489,9 +489,8 @@
 				"5B0DDB1187A9F468"
 			]
 			id: "213975BF6C92BB6D"
-			size: 3.0d
-			tasks: [{
-				id: "1FDDE093423A0BFB"
+			rewards: [{
+				id: "6E39D2F861894029"
 				item: {
 					Count: 1b
 					id: "patchouli:guide_book"
@@ -500,6 +499,11 @@
 					}
 				}
 				type: "item"
+			}]
+			size: 3.0d
+			tasks: [{
+				id: "4878031AFDA7D07C"
+				type: "checkmark"
 			}]
 			x: 1.0d
 			y: 6.0d

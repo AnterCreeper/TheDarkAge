@@ -1,4 +1,53 @@
 ServerEvents.recipes(event => {
+        event.custom({
+                "type": "tconstruct:melting",
+                "ingredient": {
+                        "item": "create:crimsite"
+                },
+                "result": {
+                        "amount": 18,
+                        "fluid": "tconstruct:molten_iron"
+                },
+                "temperature": 800,
+                "time": 120
+        });
+        event.custom({
+                "type": "tconstruct:melting",
+                "ingredient": {
+                        "item": "create:veridium"
+                },
+                "result": {
+                        "amount": 18,
+                        "fluid": "tconstruct:molten_copper"
+                },
+                "temperature": 500,
+                "time": 220
+        });
+        event.custom({
+                "type": "tconstruct:melting",
+                "ingredient": {
+                        "item": "create:asurine"
+                },
+                "result": {
+                        "amount": 18,
+                        "fluid": "tconstruct:molten_zinc"
+                },
+                "temperature": 420,
+                "time": 100
+        });
+        event.custom({
+                "type": "tconstruct:melting",
+                "ingredient": {
+                        "item": "create:ochrum"
+                },
+                "result": {
+                        "amount": 18,
+                        "fluid": "tconstruct:molten_gold"
+                },
+                "temperature": 700,
+                "time": 120
+        });
+
 	event.smelting(
 		"immersive_weathering:ash_layer_block",
 		"minecraft:vine"

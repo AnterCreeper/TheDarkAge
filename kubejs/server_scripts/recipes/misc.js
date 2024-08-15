@@ -1,6 +1,14 @@
 ServerEvents.recipes(event => {
 	event.campfireCooking('minecraft:torch', 'minecraft:stick');
-
+	event.custom({
+		"type": "minecraft:smoking",
+		"cookingtime": 100,
+		"experience": 0.0,
+		"ingredient": {
+			"item": "minecraft:stick"
+		},
+		"result": "minecraft:torch"
+	});
 	event.shaped(
 	'totemic:tipi',
 	[

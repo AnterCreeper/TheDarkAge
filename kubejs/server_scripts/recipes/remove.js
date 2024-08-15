@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
 	let tools_outputlist = [
+		'minecraft:shield',
 		'minecraft:wooden_axe',
 		'minecraft:wooden_hoe',
 		'minecraft:wooden_pickaxe',

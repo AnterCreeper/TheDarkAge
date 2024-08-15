@@ -144,7 +144,7 @@
 			id: "6ACB8C7F60D730ED"
 			tasks: [{
 				id: "587A5AF07C4917C7"
-				item: "createaddition:iron_rod"
+				item: "kubejs:iron_bolt"
 				type: "item"
 			}]
 			x: 0.0d
@@ -278,8 +278,8 @@
 				item: "kubejs:advanced_kinetic_mechanism"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 7.5d
+			x: -1.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0AD72EBB47451150"]
@@ -290,7 +290,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4EA00DC97A4A2984"]
@@ -399,7 +399,7 @@
 				title: "Any #forge:slimeballs"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.0d
 			y: 3.0d
 		}
 		{
@@ -410,7 +410,7 @@
 				item: "create:belt_connector"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 8.5d
 			y: 4.5d
 		}
 		{
@@ -422,8 +422,8 @@
 				item: "create:cuckoo_clock"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 10.5d
+			x: 1.0d
+			y: 10.0d
 		}
 		{
 			id: "4ED2E64F10FB7B27"
