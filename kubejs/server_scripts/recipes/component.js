@@ -108,79 +108,63 @@ ServerEvents.recipes(event => {
 		"time": 73
 	});
 
-	event.shapeless(
+	event.recipes.farmersdelight.cutting(
+        "minecraft:iron_ingot",
+        "tconstruct:sledge_hammer",
 	"create:iron_sheet",
-	[
-		"minecraft:iron_ingot",
-		"tconstruct:sledge_hammer"
-	]).keepIngredient("tconstruct:sledge_hammer");
-	event.shapeless(
+	"anvil"
+	);
+	event.recipes.farmersdelight.cutting(
+	"minecraft:copper_ingot",
+        "tconstruct:sledge_hammer",
 	"create:copper_sheet",
-	[
-		"minecraft:copper_ingot",
-		"tconstruct:sledge_hammer"
-	]).keepIngredient("tconstruct:sledge_hammer");
-	event.shapeless(
+	"anvil"
+	);
+	event.recipes.farmersdelight.cutting(
+	"create:brass_ingot",
+        "tconstruct:sledge_hammer",
 	"create:brass_sheet",
-	[
-		"create:brass_ingot",
-		"tconstruct:sledge_hammer"
-	]).keepIngredient("tconstruct:sledge_hammer");
-	event.shapeless(
-	"create:golden_sheet",
-	[
-		"minecraft:gold_ingot",
-		"tconstruct:sledge_hammer"
-	]).keepIngredient("tconstruct:sledge_hammer");
-	event.shapeless(
+	"anvil"
+	);
+	event.recipes.farmersdelight.cutting(
+	"create:zinc_ingot",
+        "tconstruct:sledge_hammer",
 	"createaddition:zinc_sheet",
-	[
-		"create:zinc_ingot",
-		"tconstruct:sledge_hammer"
-	]).keepIngredient("tconstruct:sledge_hammer");
-	event.shapeless(
+	"anvil"
+	);
+	event.recipes.farmersdelight.cutting(
+	"createaddition:electrum_ingot",
+        "tconstruct:sledge_hammer",
 	"createaddition:electrum_sheet",
-	[
-		"createaddition:electrum_ingot",
-		"tconstruct:sledge_hammer"
-	]).keepIngredient("tconstruct:sledge_hammer");
-	event.shapeless(
+	"anvil"
+	);
+	event.recipes.farmersdelight.cutting(
+	"kubejs:steel_ingot",
+        "tconstruct:sledge_hammer",
 	"kubejs:steel_sheet",
-	[
-		"kubejs:steel_ingot",
-		"tconstruct:sledge_hammer"
-	]).keepIngredient("tconstruct:sledge_hammer");
-	event.shapeless(
-	"rainbowcompound:lapis_sheet",
-	[
-		"minecraft:lapis_block",
-		"tconstruct:sledge_hammer"
-	]).keepIngredient("tconstruct:sledge_hammer");
+	"anvil"
+	);
 
-	event.shapeless(
-	"kubejs:amethyst_bronze_bolt",
-	[
-		"kubejs:amethyst_bronze_rod",
-		"tinkersurvival:saw"
-	]).keepIngredient("tinkersurvival:saw");
-	event.shapeless(
-	"kubejs:brass_bolt",
-	[
-		"createaddition:brass_rod",
-		"tinkersurvival:saw"
-	]).keepIngredient("tinkersurvival:saw");
-	event.shapeless(
-	"kubejs:iron_bolt",
-	[
-		"createaddition:iron_rod",
-		"tinkersurvival:saw"
-	]).keepIngredient("tinkersurvival:saw");
-	event.shapeless(
-	"kubejs:steel_bolt",
-	[
-		"kubejs:steel_rod",
-		"tinkersurvival:saw"
-	]).keepIngredient("tinkersurvival:saw");
+	event.recipes.farmersdelight.cutting(
+	"kubejs:amethyst_bronze_rod",
+	"tinkersurvival:saw",
+	"kubejs:amethyst_bronze_bolt"
+	);
+	event.recipes.farmersdelight.cutting(
+	"createaddition:brass_rod",
+	"tinkersurvival:saw",
+	"kubejs:brass_bolt"
+	);
+	event.recipes.farmersdelight.cutting(
+	"createaddition:iron_rod",
+	"tinkersurvival:saw",
+	"kubejs:iron_bolt"
+	);
+	event.recipes.farmersdelight.cutting(
+	"kubejs:steel_rod",
+	"tinkersurvival:saw",
+	"kubejs:steel_bolt"
+	);
 
 	event.recipes.create.cutting('2x kubejs:amethyst_bronze_bolt', 'kubejs:amethyst_bronze_rod');
 	event.recipes.create.cutting('2x kubejs:steel_bolt', 'kubejs:steel_rod');
