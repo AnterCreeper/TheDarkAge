@@ -1,19 +1,4 @@
 ServerEvents.recipes(event => {
-	event.replaceInput({
-		input: "minecraft:flint_and_steel"
-	},
-	"minecraft:flint_and_steel",
-	"#kubejs:flint_and_steel_alt"
-	);
-	event.replaceInput({
-		input: "minecraft:coal_block",
-		not: {
-			id: "minecraft:coal"
-		}
-	},
-	"minecraft:coal_block",
-	"#kubejs:coal_block_alt"
-	);
 	event.campfireCooking('minecraft:torch', 'minecraft:stick');
 	event.custom({
 		"type": "minecraft:smoking",
@@ -141,7 +126,7 @@ ServerEvents.recipes(event => {
 		id: "supplementaries:soap"
 	},
 	"minecraft:porkchop",
-	"#immersive_weathering:wax"
+	"delightful:animal_fat"
 	);
 
         event.replaceInput(
@@ -228,62 +213,4 @@ ServerEvents.recipes(event => {
 	"3x caverns_and_chasms:spiked_rail"
 	);
 
-	event.custom({
-		"type": "eidolon:crucible",
-		"steps": [{
-			"items" :[{
-				"item": "delightful:animal_fat",
-			}, {
-				"item": "delightful:animal_fat",
-			}]
-		}],
-		"result": {
-			"item": "immersive_weathering:tallow"
-		}
-	});
-        event.recipes.create.mixing([
-		"immersive_weathering:tallow"
-        ],
-        [
-		"2x delightful:animal_fat",
-		Fluid.of('minecraft:water', 500)
-        ]).heated();
-	event.recipes.create.haunting(
-	"eidolon:tallow",
-	"#immersive_weathering:wax"
-	);
-	event.replaceInput({
-		id: "goety:soul_candlestick"
-	},
-	"#minecraft:candles",
-	"eidolon:candle"
-	);
-
-	event.recipes.create.compacting(
-	"4x minecraft:gunpowder",
-	[
-		"eidolon:sulfur",
-		"minecraft:bone_meal",
-		"minecraft:charcoal"
-	]);
-
-        event.recipes.create.mixing([
-		"6x supplementaries:soap"
-        ],
-        [
-		"4x immersive_weathering:ash_layer_block",
-		"immersive_weathering:tallow",
-		Fluid.of('minecraft:water', 500)
-        ]);
-
-	event.recipes.create.compacting(
-	Fluid.of("createdieselgenerators:plant_oil", 500),
-	"supplementaries:flax_seeds"
-	);
-	event.replaceInput({
-		id: "createdieselgenerators:compacting/plant_oil"
-	},
-	"#forge:seeds",
-	"#kubejs:seeds"
-	);
 })

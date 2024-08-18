@@ -26,7 +26,17 @@ ServerEvents.recipes(event => {
 		'minecraft:diamond_helmet',
 		'minecraft:diamond_chestplate',
 		'minecraft:diamond_leggings',
-		'minecraft:diamond_boots'
+		'minecraft:diamond_boots',
+		'delightful:steel_knife',
+		'delightful:brass_knife',
+		'delightful:bronze_knife',
+		'delightful:lead_knife',
+		'delightful:zinc_knife',
+		'delightful:manasteel_knife',
+		'delightful:elementium_knife',
+		'delightful:terra_knife',
+		'farmersdelight:iron_knife',
+		'farmersdelight:diamond_knife'
 	];
 	for(let i of tools_outputlist){
 		event.remove(
@@ -71,6 +81,10 @@ ServerEvents.recipes(event => {
         event.remove(
         {
                 id: "create:milling/gravel"
+        });
+        event.remove(
+        {
+                id: "create:milling/terracotta"
         });
 
         event.remove(
@@ -225,12 +239,87 @@ ServerEvents.recipes(event => {
 		'create:milling/diorite',
 		'create:mixing/andesite_alloy',
 		'create:crushing/tuff',
-		'create:crushing/tuff_recycling'
+		'create:crushing/tuff_recycling',
+		'minecraft:bone_meal',
+		'minecraft:iron_bars',
+		'totemic:leather_from_hide',
+		'caverns_and_chasms:bundle',
+		'carmersdelight:cutting/quartz_block',
+		'eidolon:meat_to_flesh',
+		'create:crushing/iron/scrap_gold_small',
+		'create:crushing/iron/scrap_iron_small',
+		'create:crushing/iron/scrap_iron_tiny',
+		'tconstruct:smeltery/melting/metal/iron/ingot_1',
+		'tconstruct:smeltery/melting/metal/iron/nugget_3',
+		'tconstruct:smeltery/melting/metal/gold/powered_rail',
+		'delightful:candle_from_animal_fat',
+		'delightful:integration/immersive_weathering/tallow_from_animal_fat',
+		'create_things_and_misc:slimefluidcraft',
+		'create:crushing/update_one/scrap_candles'
 	];
 	for(let i of material_idlist){
                 event.remove(
                 {
                         id: `${i}`
+                });
+        };
+
+	let track_outputlist = [
+		'railways:track_acacia',
+		'railways:track_birch',
+		'railways:track_crimson',
+		'railways:track_dark_oak',
+		'railways:track_jungle',
+		'railways:track_oak',
+		'railways:track_spruce',
+		'railways:track_warped',
+		'railways:track_blackstone',
+		'railways:track_ender',
+		'railways:track_phantom',
+		'railways:track_mangrove',
+		'railways:track_acacia_wide',
+		'railways:track_birch_wide',
+		'railways:track_blackstone_wide',
+		'railways:track_crimson_wide',
+		'railways:track_dark_oak_wide',
+		'railways:track_ender_wide',
+		'railways:track_jungle_wide',
+		'railways:track_mangrove_wide',
+		'railways:track_oak_wide',
+		'railways:track_spruce_wide',
+		'railways:track_warped_wide',
+		'railways:track_acacia_narrow',
+		'railways:track_birch_narrow',
+		'railways:track_blackstone_narrow',
+		'railways:track_crimson_narrow',
+		'railways:track_dark_oak_narrow',
+		'railways:track_ender_narrow',
+		'railways:track_jungle_narrow',
+		'railways:track_mangrove_narrow',
+		'railways:track_oak_narrow',
+		'railways:track_spruce_narrow',
+		'railways:track_warped_narrow',
+		'railways:track_quark_blossom',
+		'railways:track_quark_blossom_wide',
+		'railways:track_quark_blossom_narrow',
+		'railways:track_quark_ancient',
+		'railways:track_quark_ancient_wide',
+		'railways:track_quark_ancient_narrow',
+		'railways:track_quark_azalea',
+		'railways:track_quark_azalea_wide',
+		'railways:track_quark_azalea_narrow',
+
+		'create:track',
+		'railways:track_create_andesite_wide',
+		'railways:track_create_andesite_narrow',
+		'railways:track_tieless',
+		'railways:track_tieless_narrow',
+		'railways:track_tieless_wide'
+	];
+	for(let i of track_outputlist){
+                event.remove(
+                {
+                        output: `${i}`
                 });
         };
 

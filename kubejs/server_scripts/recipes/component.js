@@ -195,4 +195,70 @@ ServerEvents.recipes(event => {
 	"createaddition:iron_rod"
 	);
 
+	let inter = "create:incomplete_track";
+	event.recipes.create.sequenced_assembly(
+	'6x create:track',
+	'#create:sleepers',
+	[
+		event.recipes.createDeploying(inter, [inter, 'kubejs:hepatizon_rod']),
+		event.recipes.createDeploying(inter, [inter, 'kubejs:iron_bolt']),
+		event.recipes.createPressing(inter, inter)
+	]).transitionalItem(inter).loops(2);
+
+	inter = "railways:track_incomplete_create_andesite_narrow";
+	event.recipes.create.sequenced_assembly(
+	'9x railways:track_create_andesite_narrow',
+	'#create:sleepers',
+	[
+		event.recipes.createCutting(inter, inter),
+		event.recipes.createDeploying(inter, [inter, 'kubejs:hepatizon_rod']),
+		event.recipes.createDeploying(inter, [inter, 'kubejs:hepatizon_rod']),
+		event.recipes.createDeploying(inter, [inter, 'kubejs:iron_bolt']),
+		event.recipes.createPressing(inter, inter)
+	]).transitionalItem(inter).loops(1);
+
+	inter = "railways:track_incomplete_create_andesite_wide";
+	event.recipes.create.sequenced_assembly(
+	'railways:track_create_andesite_wide',
+	'create:track',
+	[
+		event.recipes.createDeploying(inter, [inter, '#create:sleepers']),
+		event.recipes.createCutting(inter, inter),
+		event.recipes.createDeploying(inter, [inter, 'kubejs:iron_bolt']),
+		event.recipes.createPressing(inter, inter)
+	]).transitionalItem(inter).loops(1);
+
+	inter = "railways:track_incomplete_tieless";
+	event.recipes.create.sequenced_assembly(
+	'6x railways:track_tieless',
+	'#forge:glass_panes/colorless',
+	[
+		event.recipes.createDeploying(inter, [inter, 'kubejs:hepatizon_rod']),
+		event.recipes.createDeploying(inter, [inter, 'kubejs:iron_bolt']),
+		event.recipes.createDeploying(inter, [inter, 'create:wrench']).keepHeldItem()
+	]).transitionalItem(inter).loops(2);
+
+	inter = "railways:track_incomplete_tieless_narrow";
+	event.recipes.create.sequenced_assembly(
+	'9x railways:track_tieless_narrow',
+	'#forge:glass_panes/colorless',
+	[
+		event.recipes.createCutting(inter, inter),
+		event.recipes.createDeploying(inter, [inter, 'kubejs:hepatizon_rod']),
+		event.recipes.createDeploying(inter, [inter, 'kubejs:hepatizon_rod']),
+		event.recipes.createDeploying(inter, [inter, 'kubejs:iron_bolt']),
+		event.recipes.createDeploying(inter, [inter, 'create:wrench']).keepHeldItem()
+	]).transitionalItem(inter).loops(1);
+
+	inter = "railways:track_incomplete_tieless_wide";
+	event.recipes.create.sequenced_assembly(
+	'railways:track_tieless_wide',
+	'railways:track_tieless',
+	[
+		event.recipes.createDeploying(inter, [inter, '#forge:glass_panes/colorless']),
+		event.recipes.createCutting(inter, inter),
+		event.recipes.createDeploying(inter, [inter, 'kubejs:iron_bolt']),
+		event.recipes.createDeploying(inter, [inter, 'create:wrench']).keepHeldItem()
+	]).transitionalItem(inter).loops(1);
+
 })

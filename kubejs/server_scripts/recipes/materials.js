@@ -2,6 +2,18 @@ ServerEvents.recipes(event => {
         event.custom({
                 "type": "tconstruct:melting",
                 "ingredient": {
+                        "item": "create:powdered_obsidian"
+                },
+                "result": {
+                        "amount": 250,
+                        "fluid": "tconstruct:molten_obsidian"
+                },
+                "temperature": 1000,
+                "time": 30
+        });
+        event.custom({
+                "type": "tconstruct:melting",
+                "ingredient": {
                         "item": "create:crimsite"
                 },
                 "result": {
@@ -81,6 +93,18 @@ ServerEvents.recipes(event => {
 		"#minecraft:leaves"
 	);
 	event.smelting(
+		"immersive_weathering:ash_layer_block",
+		"minecraft:dead_bush"
+	);
+	event.recipes.create.compacting(
+	[
+		Fluid.of("minecraft:water", 10),
+		'minecraft:dead_bush'
+	], [
+		'#minecraft:saplings',
+		'#minecraft:saplings'
+	]);
+	event.smelting(
 		Item.of("immersive_weathering:ash_layer_block").withChance(0.25),
 		"minecraft:moss_carpet"
 	);
@@ -94,10 +118,11 @@ ServerEvents.recipes(event => {
 	);
 
 	event.recipes.create.mixing([
-		"eidolon:sulfur",
+		"2x eidolon:sulfur",
 		Item.of('eidolon:sulfur').withChance(0.5)
 	],
 	[
+		Fluid.of('minecraft:water', 1000),
 		'minecraft:coal',
 		"eidolon:enchanted_ash"
 	]).heated();
@@ -107,6 +132,12 @@ ServerEvents.recipes(event => {
         [
                 "eidolon:sulfur",
                 '4x #forge:slimeballs'
+        ]).heated();
+        event.recipes.create.mixing(
+	"kubejs:rubber",
+        [
+                "eidolon:sulfur",
+                '9x minecraft:dandelion'
         ]).heated();
 
 	event.replaceInput({
@@ -219,6 +250,13 @@ ServerEvents.recipes(event => {
 		K: "kubejs:kaolinite",
 		C: "minecraft:clay_ball",
 	});
+	event.recipes.create.mixing(
+	"2x kubejs:fire_clay_ball",
+	[
+		"4x kubejs:borax",
+		"4x kubejs:kaolinite",
+		"minecraft:clay_ball"
+	]);
 	event.recipes.create.pressing(
 	"kubejs:fire_clay_sheet",
 	"kubejs:fire_clay_ball"
@@ -236,12 +274,22 @@ ServerEvents.recipes(event => {
 	"kubejs:fire_clay_sheet"
 	);
 
-	event.replaceInput({
-		type: "create:deploying",
-		input: "minecraft:iron_nugget"
-	},
-	"minecraft:iron_nugget",
-	"tconstruct:hepatizon_nugget"
+	event.custom({
+	"type": "eidolon:crucible",
+	"steps": [{
+		"items": [{
+			"tag": "forge:mushrooms"
+		}, {
+			"tag": "ratatouille:raw_meat"
+		}]
+	}],
+	"result": {
+		"item": "minecraft:rotten_flesh"
+	}
+	});
+	event.recipes.create.milling(
+	Item.of("minecraft:nether_wart").withChance(0.25),
+	"minecraft:nether_wart_block"
 	);
 
 })

@@ -13,7 +13,7 @@ SLOW_DOWN_SPEED = 0.4
 #Inverts blacklist to be whitelist. This allows for immersion mods/modpacks to only allow tools or armor for specific mods. Default: false
 INVERT_LIST_TO_WHITELIST = false
 #List of mods that tools will become wet noodles. If inverted, acts as a whitelist. Default: [""]
-mods = []
+mods = ["tconstruct"]
 #List of individual tools that will always work. Format tooltype-modid:item Default: [""]
 items = []
 #Used to dump log info for Survivalist Essentials Modpack. Ignore.

@@ -17,4 +17,15 @@ ServerEvents.tags('item', event => {
 	event.add('forge:gears', 'kubejs:hepatizon_gear');
 	event.add('forge:gears/hepatizon', 'kubejs:hepatizon_gear');
 	event.add('forge:gears', "create:cogwheel");
+
+	event.add('kubejs:flint_and_steel_alt', "minecraft:flint_and_steel");
+	event.add('kubejs:flint_and_steel_alt', "tconstruct:flint_and_brick");
+	event.add('kubejs:coal_block_alt', "minecraft:coal_block");
+	event.add('kubejs:coal_block_alt', "quark:charcoal_block");
+
+	const seeds = event.get('forge:seeds').getObjectIds();
+	const blacklist = Ingredient.of("supplementaries:flax_seeds");
+	seeds.forEach(seed => {
+		if (!blacklist.test(seed)) event.add('kubejs:seeds', seed);
+	})
 })

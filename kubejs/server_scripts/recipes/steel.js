@@ -52,6 +52,19 @@ ServerEvents.recipes(event => {
         event.custom({
                 "type": "lychee:item_inside",
                 "item_in": {
+                        "item": "kubejs:hot_pig_iron_ingot"
+                },
+                "block_in": {
+                        "blocks": ["minecraft:water"]
+                },
+                "post": {
+                        "type": "drop_item",
+                        "item": "tconstruct:pig_iron_ingot"
+                }
+        });
+        event.custom({
+                "type": "lychee:item_inside",
+                "item_in": {
                         "item": "kubejs:hot_steel_ingot"
                 },
                 "block_in": {
@@ -68,6 +81,12 @@ ServerEvents.recipes(event => {
 	},
 	'minecraft:iron_ingot',
 	'kubejs:steel_ingot'
+	);
+	event.replaceOutput({
+		id: "create:crushing/iron/scrap_iron_tiny"
+	},
+	"minecraft:iron_nugget",
+	"kubejs:steel_nugget"
 	);
 
 })
