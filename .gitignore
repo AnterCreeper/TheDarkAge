@@ -1,1 +1,11 @@
 *.tmp
+*.dat_old
+crash-reports/
+logs/
+
+log4j2.xml
+TheDarkAge.json
+TheDarkAge.jar
+patchouli_data.json
+rhino.local.properties
+user*cache.json
