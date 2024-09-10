@@ -261,4 +261,60 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying(inter, [inter, 'create:wrench']).keepHeldItem()
 	]).transitionalItem(inter).loops(1);
 
+	event.shaped(
+	{
+		item: "kubejs:tungsten_mold",
+		nbt: {type:gear}
+	},
+	[
+		"CDC",
+		"DCD",
+		"CDC"
+	],
+	{
+		"C": "kubejs:fire_clay_ball",
+		"D": "kubejs:tungsten_carbide_mixture"
+	});
+	event.shaped(
+	{
+		item: "kubejs:tungsten_mold",
+		nbt: {type:drill}
+	},
+	[
+		"CDD",
+		"CDD",
+		"DCC"
+	],
+	{
+		"C": "kubejs:fire_clay_ball",
+		"D": "kubejs:tungsten_carbide_mixture"
+	});
+	event.shaped(
+	{
+		item: "kubejs:tungsten_mold",
+		nbt: {type:teeth}
+	},
+	[
+		"CDC",
+		"CDD",
+		"CCC"
+	],
+	{
+		"C": "kubejs:fire_clay_ball",
+		"D": "kubejs:tungsten_carbide_mixture"
+	});
+	event.shaped(
+	{
+		item: "kubejs:tungsten_mold",
+		nbt: {type:bolt}
+	},
+	[
+		"CCD",
+		"CDC",
+		"CCC"
+	],
+	{
+		"C": "kubejs:fire_clay_ball",
+		"D": "kubejs:tungsten_carbide_mixture"
+	});
 })

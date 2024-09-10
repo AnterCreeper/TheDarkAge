@@ -1,4 +1,71 @@
 ServerEvents.recipes(event => {
+	event.custom({
+		"type": "goety:pulverize",
+		"ingredient": [{
+			"item": "minecraft:sandstone"
+		}],
+		"block_result": "minecraft:sand"
+	});
+	event.recipes.create.crushing(
+	'minecraft:sand',
+	"#forge:corundum_clusters"
+	);
+	event.shapeless(
+	"4x survivalistessentials:flint_shard",
+	"minecraft:gravel"
+	);
+
+	event.recipes.create.mixing(
+	"4x environmental:mud_ball",
+	[
+		Fluid.of("minecraft:water", 250),
+		"minecraft:dirt"
+	]);
+
+	event.recipes.create.milling(
+	'4x kubejs:kaolinite',
+	'minecraft:granite'
+	);
+	event.recipes.create.milling(
+	'4x kubejs:borax',
+	'minecraft:diorite'
+	);
+	event.shaped(
+	'2x kubejs:fire_clay_ball',
+	[
+		"BKB",
+		"KCK",
+		"BKB"
+	],
+	{
+		B: "kubejs:borax",
+		K: "kubejs:kaolinite",
+		C: "minecraft:clay_ball",
+	});
+	event.recipes.create.mixing(
+	"2x kubejs:fire_clay_ball",
+	[
+		"4x kubejs:borax",
+		"4x kubejs:kaolinite",
+		"minecraft:clay_ball"
+	]);
+	event.recipes.create.pressing(
+	"kubejs:fire_clay_sheet",
+	"kubejs:fire_clay_ball"
+	);
+        event.shaped(
+        "3x kubejs:fire_clay_sheet",
+        [
+		"CCC"
+	],
+	{
+		C: "kubejs:fire_clay_ball"
+	});
+	event.smelting(
+	"kubejs:burnt_fire_clay_sheet",
+	"kubejs:fire_clay_sheet"
+	);
+
         event.custom({
                 "type": "tconstruct:melting",
                 "ingredient": {
@@ -116,6 +183,12 @@ ServerEvents.recipes(event => {
 		"4x immersive_weathering:ash_layer_block",
 		"minecraft:mangrove_roots"
 	);
+	event.replaceInput({
+		input: "supplementaries:ash"
+	},
+	"supplementaries:ash",
+	"immersive_weathering:ash_layer_block"
+	);
 
 	event.recipes.create.mixing([
 		"2x eidolon:sulfur",
@@ -167,7 +240,6 @@ ServerEvents.recipes(event => {
 	],
 	"minecraft:tuff"
 	);
-
 	event.blasting(
 	"kubejs:quicklime",
 	"kubejs:limestone"
@@ -193,7 +265,7 @@ ServerEvents.recipes(event => {
                 Fluid.of('kubejs:caustic_soda_solution', 1000)
         ]).heated();
 	event.recipes.create.mixing([
-                "kubejs:tungsten_carbide_mixture",
+                "12x kubejs:tungsten_carbide_mixture",
                 Fluid.of("minecraft:water", 1000)
         ],
         [
@@ -202,77 +274,25 @@ ServerEvents.recipes(event => {
                 "6x kubejs:tungsten_trioxide"
         ]).heated();
 
-	event.replaceInput({
-		input: "supplementaries:ash"
-	},
-	"supplementaries:ash",
-	"immersive_weathering:ash_layer_block"
-	);
-
 	event.blasting(
 	"ratatouille:salt",
 	"minecraft:dried_kelp"
 	);
 
 	event.recipes.create.milling(
-	'4x kubejs:kaolinite',
-	'minecraft:granite'
-	);
-	event.recipes.create.milling(
-	'4x kubejs:borax',
-	'minecraft:diorite'
-	);
-	event.recipes.create.milling(
-	'9x kubejs:cobalt_powder',
+	'27x kubejs:cobalt_powder',
 	'tconstruct:cobalt_ingot'
 	);
 	event.recipes.create.milling(
-	'kubejs:cobalt_powder',
+	'3x kubejs:cobalt_powder',
 	'tconstruct:cobalt_nugget'
 	);
         event.shapeless(
-        'kubejs:cobalt_powder',
+        '2x kubejs:cobalt_powder',
         [
                 'tconstruct:cobalt_nugget',
                 Item.of('survivalistessentials:mortar_and_pestle').ignoreNBT()
         ]).keepIngredient(Item.of('survivalistessentials:mortar_and_pestle').ignoreNBT());
-
-
-	event.shaped(
-	'2x kubejs:fire_clay_ball',
-	[
-		"BKB",
-		"KCK",
-		"BKB"
-	],
-	{
-		B: "kubejs:borax",
-		K: "kubejs:kaolinite",
-		C: "minecraft:clay_ball",
-	});
-	event.recipes.create.mixing(
-	"2x kubejs:fire_clay_ball",
-	[
-		"4x kubejs:borax",
-		"4x kubejs:kaolinite",
-		"minecraft:clay_ball"
-	]);
-	event.recipes.create.pressing(
-	"kubejs:fire_clay_sheet",
-	"kubejs:fire_clay_ball"
-	);
-        event.shaped(
-        "3x kubejs:fire_clay_sheet",
-        [
-		"CCC"
-	],
-	{
-		C: "kubejs:fire_clay_ball"
-	});
-	event.smelting(
-	"kubejs:burnt_fire_clay_sheet",
-	"kubejs:fire_clay_sheet"
-	);
 
 	event.custom({
 	"type": "eidolon:crucible",
@@ -287,6 +307,7 @@ ServerEvents.recipes(event => {
 		"item": "minecraft:rotten_flesh"
 	}
 	});
+
 	event.recipes.create.milling(
 	Item.of("minecraft:nether_wart").withChance(0.25),
 	"minecraft:nether_wart_block"

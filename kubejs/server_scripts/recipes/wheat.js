@@ -116,5 +116,17 @@ ServerEvents.recipes(event => {
 			"chance": 0.1
 		}]
 	});
+	event.replaceInput({
+		id: "createaddition:compacting/cake_base"
+	},
+	"create:dough",
+	"#forge:dough/wheat"
+	);
+	event.replaceInput({
+		id: "farmersdelight:cooking/crab_cakes"
+	},
+	"farmersdelight:wheat_dough",
+	"#forge:dough/wheat"
+	);
 
 })

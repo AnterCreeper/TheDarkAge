@@ -1,4 +1,6 @@
 ServerEvents.tags('item', event => {
+	event.add('create:blaze_burner_fuel/special', 'goety:ectoplasm');
+
 	event.add('forge:gears', 'kubejs:diamond_gear');
 	event.add('forge:gears', 'kubejs:obsidian_gear');
 	event.add('forge:gears/iron', 'kubejs:iron_gear');

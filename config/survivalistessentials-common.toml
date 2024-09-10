@@ -11,15 +11,15 @@ HEAL_RATE = 0.14
 #Range: 0.1 ~ 1.0
 SLOW_DOWN_SPEED = 0.4
 #Inverts blacklist to be whitelist. This allows for immersion mods/modpacks to only allow tools or armor for specific mods. Default: false
-INVERT_LIST_TO_WHITELIST = true
+INVERT_LIST_TO_WHITELIST = false
 #List of mods that tools will become wet noodles. If inverted, acts as a whitelist. Default: [""]
-mods = ["tconstruct", "survivalistessentials"]
+mods = []
 #List of individual tools that will always work. Format tooltype-modid:item Default: [""]
 items = []
 #Used to dump log info for Survivalist Essentials Modpack. Ignore.
 LOG_MODPACK_DATA = false
 #List of mods that have blocks that are generally decorative in nature and require no tool for harvesting blocks. Default: ["comforts"]
-blockmods = ["comforts"]
+blockmods = ["comforts", "totemic"]
 #Hunger penalty feature. If after dying, player is rewarded with reduced hunger levels.
 ENABLE_HUNGER_PENALTY = false
 #Hunger value after death in half shanks. (0 = Really? That's just cruel, 20 = No penalty.)

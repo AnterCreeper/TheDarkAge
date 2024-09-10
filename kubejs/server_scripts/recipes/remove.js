@@ -234,6 +234,8 @@ ServerEvents.recipes(event => {
         };
 
 	let material_idlist = [
+		'torcherino:torcherino',
+		'survivalistessentials:leather_from_cooked_meat_smoking',
 		'create:crushing/gravel',
 		'create:milling/granite',
 		'create:milling/diorite',
@@ -255,7 +257,12 @@ ServerEvents.recipes(event => {
 		'delightful:candle_from_animal_fat',
 		'delightful:integration/immersive_weathering/tallow_from_animal_fat',
 		'create_things_and_misc:slimefluidcraft',
-		'create:crushing/update_one/scrap_candles'
+		'create:crushing/update_one/scrap_candles',
+		'create:crushing/update_one/scrap_rose_quartz',
+		'create:crushing/update_one/scrap_polished_rose_quartz',
+		'goety:pulverize/sand_pulverize',
+		'tconstruct:smeltery/alloys/molten_electrum',
+		'tconstruct:smeltery/alloys/molten_bronze'
 	];
 	for(let i of material_idlist){
                 event.remove(
@@ -320,6 +327,16 @@ ServerEvents.recipes(event => {
                 event.remove(
                 {
                         output: `${i}`
+                });
+        };
+
+	let ore_idlist = [
+		
+	];
+	for(let i of ore_idlist){
+                event.remove(
+                {
+                        id: `${i}`
                 });
         };
 

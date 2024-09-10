@@ -1,4 +1,31 @@
 ServerEvents.recipes(event => {
+	event.shaped(
+	"torcherino:torcherino",
+	[
+		"E",
+		"S"
+	],
+	{
+		"E": "goety:ectoplasm",
+		"S": "minecraft:stick"
+	});
+
+	event.recipes.farmersdelight.cutting(
+	"minecraft:honeycomb_block",
+	"#forge:tools/scavenging",
+	[
+		"4x minecraft:honeycomb"
+	]
+	);
+
+	event.recipes.farmersdelight.cutting(
+	"environmental:venison",
+	"#forge:tools/scavenging",
+	[
+		"2x delightful:venison_chops"
+	]
+	);
+
 	event.replaceInput({
 		input: "minecraft:flint_and_steel"
 	},
