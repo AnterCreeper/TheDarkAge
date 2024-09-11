@@ -234,6 +234,7 @@ ServerEvents.recipes(event => {
         };
 
 	let material_idlist = [
+		'create:crafting/materials/electron_tube',
 		'torcherino:torcherino',
 		'survivalistessentials:leather_from_cooked_meat_smoking',
 		'create:crushing/gravel',

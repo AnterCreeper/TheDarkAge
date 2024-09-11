@@ -1,4 +1,11 @@
 ServerEvents.recipes(event => {
+	event.recipes.create.filling(
+	"create:electron_tube",
+	[
+		Fluid.of("tconstruct:molten_iron", 45),
+		"create:polished_rose_quartz"
+	]);
+
 	event.custom({
 		"type": "goety:pulverize",
 		"ingredient": [{
