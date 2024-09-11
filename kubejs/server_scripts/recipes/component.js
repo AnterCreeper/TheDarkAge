@@ -264,7 +264,7 @@ ServerEvents.recipes(event => {
 	event.shaped(
 	{
 		item: "kubejs:tungsten_mold",
-		nbt: {type:gear}
+		nbt: {type:"gear"}
 	},
 	[
 		"CDC",
@@ -278,7 +278,7 @@ ServerEvents.recipes(event => {
 	event.shaped(
 	{
 		item: "kubejs:tungsten_mold",
-		nbt: {type:drill}
+		nbt: {type:"drill"}
 	},
 	[
 		"CDD",
@@ -292,7 +292,7 @@ ServerEvents.recipes(event => {
 	event.shaped(
 	{
 		item: "kubejs:tungsten_mold",
-		nbt: {type:teeth}
+		nbt: {type:"teeth"}
 	},
 	[
 		"CDC",
@@ -306,7 +306,7 @@ ServerEvents.recipes(event => {
 	event.shaped(
 	{
 		item: "kubejs:tungsten_mold",
-		nbt: {type:bolt}
+		nbt: {type:"bolt"}
 	},
 	[
 		"CCD",
