@@ -23,10 +23,9 @@ StartupEvents.registry("block", event => {
 	.resistance(1)
 	.requiresTool(true);
 
-	event.create("treated_wood", "basic")
-	.soundType("wood")
-	.hardness(2)
-	.resistance(3)
-	.burnTime(350)
-	.requiresTool(true);
+//	event.create("treated_wood", "basic")
+//	.soundType("wood")
+//	.hardness(2)
+//	.resistance(3)
+//	.requiresTool(true);
 })

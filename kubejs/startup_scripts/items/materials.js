@@ -18,4 +18,7 @@ StartupEvents.registry("item", event => {
        	.tag('kubejs:hot_item_2');
         event.create("hot_steel_ingot")
        	.tag('kubejs:hot_item_1');
+
+//	event.create("treated_wood")
+//	.burnTime(350);
 })
