@@ -6,7 +6,7 @@ CreateEvents.spoutHandler(event => {
             "quark:" + color + "_corundum",
             (block, fluid, simulate) => {
                     if (fluid.id === "minecraft:water" && fluid.amount >= 100) {
-                            if (!simulate) block.blockState.randomTick(block.level.minecraftLevel, block.pos, block.level.minecraftLevel.random);
+                            if (!simulate) block.blockState.randomTick(block.level, block.pos, block.level.random);
                             return 100;
                     }
                     return 0;

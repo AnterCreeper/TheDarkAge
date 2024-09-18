@@ -4,5 +4,9 @@ ServerEvents.tags('item', event => {
 		event.add('forge:corundum_clusters', 'quark:'+ color +'_corundum_cluster');
 	});
 	event.add("forge:tools/knives", "eidolon:athame");
-	event.add("forge:shovels", "tconstruct:excavator");
+})
+
+ServerEvents.tags('block', event => {
+        event.add('minecraft:mineable/axe', 'kubejs:treated_wood');
+        event.add('minecraft:needs_wood_tool', 'kubejs:treated_wood');
 })
