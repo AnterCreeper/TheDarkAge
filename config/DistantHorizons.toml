@@ -1,0 +1,201 @@
+_version = 2
+
+[client]
+
+	[client.advanced]
+
+		[client.advanced.lodBuilding]
+			#
+			# Determines how long must pass between LOD chunk updates before another. 
+			# update can occur
+			# 
+			# Increasing this value will reduce CPU load but may may cause 
+			# LODs to become outdated more frequently or for longer.
+			minTimeBetweenChunkUpdatesInSeconds = 1
+
+		[client.advanced.multiThreading]
+			#
+			# How many threads should be used when building LODs? 
+			# 
+			# These threads run when terrain is generated, when
+			# certain graphics settings are changed, and when moving around the world. 
+			# 
+			# Multi-threading Note:
+			# If the total thread count in Distant Horizon's config is more threads than your CPU has cores,
+			# CPU performance may suffer if Distant Horizons has a lot to load or generate.
+			# This can be an issue when first loading into a world, when flying, and/or when generating new terrain.
+			numberOfLodBuilderThreads = 4
+			#
+			# Should only be disabled if deadlock occurs and LODs refuse to update. 
+			# This will cause CPU usage to drastically increase for the Lod Builder threads. 
+			# 
+			# Note that if deadlock did occur restarting MC may be necessary to stop the locked threads.
+			enableLodBuilderThreadLimiting = true
+			#
+			# If this value is less than 1.0, it will be treated as a percentage
+			# of time each thread can run before going idle.
+			# 
+			# This can be used to reduce CPU usage if the thread count
+			# is already set to 1 for the given option, or more finely
+			# tune CPU performance.
+			runTimeRatioForWorldGenerationThreads = "0.5"
+			#
+			# If this value is less than 1.0, it will be treated as a percentage
+			# of time each thread can run before going idle.
+			# 
+			# This can be used to reduce CPU usage if the thread count
+			# is already set to 1 for the given option, or more finely
+			# tune CPU performance.
+			runTimeRatioForLodBuilderThreads = "0.25"
+			#
+			# If this value is less than 1.0, it will be treated as a percentage
+			# of time each thread can run before going idle.
+			# 
+			# This can be used to reduce CPU usage if the thread count
+			# is already set to 1 for the given option, or more finely
+			# tune CPU performance.
+			runTimeRatioForFileHandlerThreads = "0.5"
+			#
+			# How many threads should be used when reading/writing LOD data to/from disk? 
+			# 
+			# Increasing this number will cause LODs to load in faster, 
+			# but may cause lag when loading a new world or when 
+			# quickly flying through existing LODs. 
+			# 
+			# Multi-threading Note:
+			# If the total thread count in Distant Horizon's config is more threads than your CPU has cores,
+			# CPU performance may suffer if Distant Horizons has a lot to load or generate.
+			# This can be an issue when first loading into a world, when flying, and/or when generating new terrain.
+			numberOfFileHandlerThreads = 1
+			#
+			# How many threads should be used when generating LOD
+			# chunks outside the normal render distance?
+			# 
+			# If you experience stuttering when generating distant LODs,
+			# decrease this number.
+			# If you want to increase LOD
+			# generation speed, increase this number.
+			# 
+			# Multi-threading Note:
+			# If the total thread count in Distant Horizon's config is more threads than your CPU has cores,
+			# CPU performance may suffer if Distant Horizons has a lot to load or generate.
+			# This can be an issue when first loading into a world, when flying, and/or when generating new terrain.
+			numberOfWorldGenerationThreads = 2
+
+		[client.advanced.logging]
+			#
+			# If enabled, the mod will log performance about the world generation process. 
+			# This can be useful for debugging.
+			logWorldGenPerformance = "LOG_WARNING_TO_CHAT_AND_FILE"
+			#
+			# If enabled, the mod will log information about file sub-dimension operations. 
+			# This can be useful for debugging.
+			logFileSubDimEvent = "LOG_WARNING_TO_CHAT_AND_INFO_TO_FILE"
+			#
+			# If enabled, the mod will log information about file read/write operations. 
+			# This can be useful for debugging.
+			logFileReadWriteEvent = "LOG_WARNING_TO_CHAT_AND_INFO_TO_FILE"
+			#
+			# If enabled, the mod will log information about network operations. 
+			# This can be useful for debugging.
+			logNetworkEvent = "LOG_WARNING_TO_CHAT_AND_INFO_TO_FILE"
+			#
+			# If enabled, the mod will log information about the LOD generation process. 
+			# This can be useful for debugging.
+			logLodBuilderEvent = "LOG_WARNING_TO_CHAT_AND_INFO_TO_FILE"
+			#
+			# If enabled, the mod will log information about the world generation process. 
+			# This can be useful for debugging.
+			logWorldGenEvent = "LOG_WARNING_TO_CHAT_AND_FILE"
+			#
+			# If enabled, the mod will log information about the world generation process. 
+			# This can be useful for debugging.
+			logWorldGenLoadEvent = "LOG_WARNING_TO_CHAT_AND_FILE"
+
+		[client.advanced.graphics]
+
+			[client.advanced.graphics.quality]
+				#
+				# The radius of the mod's render distance. (measured in chunks)
+				# On server changes the distance players will receive real time updates for, if enabled.
+				# Note for servers:
+				# This setting does not prevent players from generating farther out.
+				# If you want to limit performance impact, change rate/concurrency (RC) limits
+				# and thread count/runtime ratio settings instead.
+				lodChunkRenderDistanceRadius = 256
+
+		[client.advanced.worldGenerator]
+			#
+			# How detailed should LODs be generated outside the vanilla render distance? 
+			# 
+			# PRE_EXISTING_ONLY 
+			# Only create LOD data for already generated chunks. 
+			# 
+			# 
+			# SURFACE 
+			# Generate the world surface, 
+			# this does NOT include trees, 
+			# or structures. 
+			# 
+			# FEATURES 
+			# Generate everything except structures. 
+			# WARNING: This may cause world generator bugs or instability when paired with certain world generator mods.
+			distantGeneratorMode = "PRE_EXISTING_ONLY"
+			#
+			# How long should a world generator thread run for before timing out? 
+			# Note: If you are experiencing timeout errors it is better to lower your CPU usage first 
+			# via the thread config before changing this value.
+			worldGenerationTimeoutLengthInSeconds = 180
+			#
+			# Should Distant Horizons slowly generate LODs 
+			#  outside the vanilla render distance?
+			enableDistantGeneration = true
+
+		[client.advanced.multiplayer]
+
+			[client.advanced.multiplayer.serverNetworking]
+				#
+				# WARNING!
+				# Server-client networking is not yet fully implemented!
+				# Both the server and client must be running the server-side fork with this option enabled
+				# for Distant Horizons data to be transceived.
+				# 
+				# If true, the server and client will attempt to communicate to transceive Distant Horizons data.
+				# This allows for further distant generation and LOD updates on all clients.
+				# 
+				# This should only be used on trusted servers with trusted players!
+				enableServerNetworking = true
+				#
+				# The amount of rate/concurrency limit hits a client can make in one second before being disconnected by the server.
+				# This setting only applies to the server and has no effect on clients.
+				rateLimitHitTolerance = 10
+				#
+				# Limits the amount of LOD sections the client can request states for per second.
+				genTaskPriorityRequestRateLimit = 50
+				#
+				# Limits the amount of sent/processed LOD *update* requests concurrently, per player.
+				loginDataSyncRCLimit = 50
+				#
+				# Prefix of the level keys sent to the clients.
+				# Should be set to a unique value for each backend server behind a proxy,
+				# or empty if you don't use a proxy.
+				levelKeyPrefix = ""
+				#
+				# If true, the client will receive real-time LOD updates for chunks outside the client's render distance.
+				enableRealTimeUpdates = false
+				#
+				# If true, clients will receive updated LODs on join if any changes occured since last join.
+				enableLoginDataSync = false
+				#
+				# Makes the server send level keys for each world.
+				# Disable this if you use alternative ways to send level keys.
+				sendLevelKeys = true
+				#
+				# Limits the amount of generation requests the server will handle.
+				generationRequestRCLimit = 20
+				#
+				# Controls the max ratio between distances of nearest unloaded sections of each priority.
+				# For example, value of 2 means that the nearest lower priority section will be allowed to stay
+				# unloaded only if it's at most 2x closer than one of a higher priority.
+				genTaskPriorityDistanceRatio = "3.0"
+

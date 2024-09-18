@@ -1,0 +1,463 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "69DEC91CE1EDDCB3"
+	group: ""
+	id: "69DEC91CE1EDDCB3"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7A4415053EE28BBD"
+			tasks: [{
+				id: "5A271B6355221A75"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:limeblock"
+					}
+				}
+				title: "Any #kubejs:limeblock"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7A4415053EE28BBD"]
+			id: "76135CDDEDD688F0"
+			tasks: [{
+				id: "6E03C7094C7FA167"
+				item: "kubejs:limestone"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["76135CDDEDD688F0"]
+			id: "1AAFF43CFC714C6D"
+			tasks: [{
+				id: "5CE056E0617122B3"
+				item: "kubejs:quicklime"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			id: "028C69736DE511E3"
+			tasks: [{
+				id: "5D93C723AB7E92BD"
+				item: "immersive_weathering:ash_layer_block"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"028C69736DE511E3"
+				"1AAFF43CFC714C6D"
+			]
+			id: "702C4CB6C819C188"
+			tasks: [{
+				id: "35DDEC80BD36A714"
+				item: "kubejs:caustic_soda_solution_bucket"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["367AAEA7AB23C0A0"]
+			id: "7AED7DE05CDA0704"
+			tasks: [{
+				id: "30D0F7DD06554BA0"
+				item: "kubejs:tungsten_ore"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			id: "42436E27A1897E98"
+			size: 2.0d
+			tasks: [{
+				id: "1EA5551112D88B51"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 0.0d
+		}
+		{
+			id: "367AAEA7AB23C0A0"
+			size: 2.0d
+			tasks: [{
+				id: "5BA5184F33EE2B11"
+				item: "kubejs:ore_scheelite"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["42436E27A1897E98"]
+			id: "5770D023C67F5CE1"
+			tasks: [{
+				id: "280533869C3B1C93"
+				item: "tconstruct:hepatizon_ingot"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5770D023C67F5CE1"]
+			id: "01E45AC062706A7D"
+			tasks: [{
+				id: "665CB8EBF073CBCB"
+				item: "kubejs:buzzsaw"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["01E45AC062706A7D"]
+			id: "4CEA3193AC1C47F8"
+			tasks: [{
+				id: "530CF762866A0D1F"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: -16.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5770D023C67F5CE1"]
+			id: "55294B3BE6573F76"
+			tasks: [{
+				id: "3C0A7B75EF066392"
+				item: "kubejs:hepatizon_rod"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"55294B3BE6573F76"
+				"4CEA3193AC1C47F8"
+			]
+			id: "560CA455CBA04143"
+			tasks: [{
+				id: "01DE82B3E31AD045"
+				item: "kubejs:hepatizon_bolt"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5770D023C67F5CE1"]
+			id: "5109698AA531C312"
+			tasks: [{
+				id: "43A0FDA526DC77B9"
+				item: "tconstruct:hepatizon_nugget"
+				type: "item"
+			}]
+			x: -17.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5109698AA531C312"]
+			id: "56EEB9B4528D90B7"
+			tasks: [{
+				id: "3E5FFD5D3F90AA4E"
+				item: "create:track"
+				type: "item"
+			}]
+			x: -18.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["42436E27A1897E98"]
+			id: "29300FB4BEDAD526"
+			tasks: [{
+				id: "2B7AF82292D1BF53"
+				item: "create:powdered_obsidian"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"702C4CB6C819C188"
+				"7AED7DE05CDA0704"
+			]
+			id: "5374ACC348E6F452"
+			tasks: [{
+				id: "56EC0D8E27251B7F"
+				item: "kubejs:tungsten_trioxide"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"29300FB4BEDAD526"
+				"761E3B03E5EF033F"
+			]
+			id: "7538FB9B175C74CB"
+			tasks: [{
+				id: "2D60804DF6453E87"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7E16393F15F6A2A0"]
+			id: "4F24A9E86F394855"
+			tasks: [{
+				id: "2CF7ABB1C4529112"
+				item: "kubejs:kaolinite"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			id: "7E16393F15F6A2A0"
+			size: 2.0d
+			tasks: [{
+				id: "7796CB08BE8F55EB"
+				item: "minecraft:granite"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4F24A9E86F394855"]
+			id: "1CA40D25E9625644"
+			tasks: [{
+				id: "0A167AADAE3AF213"
+				item: "kubejs:fire_clay_ball"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["48D83719CBD144D0"]
+			id: "2D66FFE66E606F4C"
+			tasks: [{
+				id: "7D0A127FD77C2673"
+				item: "kubejs:amethyst_bronze_bolt"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2D66FFE66E606F4C"
+				"1F6F353260E54DA6"
+			]
+			id: "0235324FCAFA9E32"
+			tasks: [{
+				id: "6887DF7A24964261"
+				item: "kubejs:sealed_mechanism"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"1BA57ED6AC35BC26"
+				"5374ACC348E6F452"
+			]
+			id: "595EBC0AFFA7DA50"
+			tasks: [{
+				id: "7B81310A33CBAEB4"
+				item: "kubejs:tungsten_carbide_mixture"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			id: "1BA57ED6AC35BC26"
+			tasks: [{
+				id: "619CFD6E47E3F0D2"
+				item: "minecraft:sugar"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"595EBC0AFFA7DA50"
+				"1CA40D25E9625644"
+				"0FBCC4705DDD6145"
+			]
+			id: "36126AA68B491E23"
+			size: 1.5d
+			tasks: [{
+				id: "053BB3B7270092AF"
+				item: "kubejs:tungsten_mold"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1CA40D25E9625644"]
+			id: "1F6F353260E54DA6"
+			tasks: [{
+				id: "02DA52D7F0ECC2BA"
+				item: "kubejs:fire_clay_sheet"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["37EBE1397A95EC86"]
+			id: "48D83719CBD144D0"
+			tasks: [{
+				id: "64A42F1154446129"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -0.5d
+		}
+		{
+			id: "0FBCC4705DDD6145"
+			tasks: [{
+				id: "77D2B3737A587724"
+				item: "kubejs:cobalt_powder"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 2.5d
+		}
+		{
+			id: "37EBE1397A95EC86"
+			tasks: [{
+				id: "206D9E7B2F03C24A"
+				item: "minecraft:budding_amethyst"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"7538FB9B175C74CB"
+				"560CA455CBA04143"
+			]
+			id: "52AA98E75105C82B"
+			size: 3.0d
+			tasks: [{
+				id: "228625B135AB8B77"
+				item: "kubejs:advanced_sealed_mechanism"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0235324FCAFA9E32"
+				"65CD3B8D2C472BC1"
+			]
+			id: "761E3B03E5EF033F"
+			size: 1.5d
+			tasks: [{
+				id: "6CBBA56D31BFC89D"
+				item: "kubejs:copper_machine"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["36126AA68B491E23"]
+			id: "702E25A344382AA1"
+			tasks: [{
+				id: "5358016CB99E005D"
+				item: "kubejs:tungsten_carbide_teeth"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["36126AA68B491E23"]
+			id: "65CD3B8D2C472BC1"
+			tasks: [{
+				id: "4EE9FDE79316B498"
+				item: "kubejs:tungsten_carbide_bolt"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["36126AA68B491E23"]
+			id: "06EC672C64417D88"
+			tasks: [{
+				id: "0DFCBA9018B38F98"
+				item: "kubejs:drill"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["06EC672C64417D88"]
+			id: "4F2A4F2C2D618DF5"
+			tasks: [{
+				id: "43203C8668062F33"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["702E25A344382AA1"]
+			id: "264B37622D5F8730"
+			tasks: [{
+				id: "55C4D68C07B73389"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7538FB9B175C74CB"]
+			id: "111E7AFABB09F86D"
+			tasks: [{
+				id: "64DA179B67B424F5"
+				item: "kubejs:sturdy_mechanism"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 7.0d
+		}
+	]
+	title: "卷四 蒸汽轰鸣"
+}

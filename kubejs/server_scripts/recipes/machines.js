@@ -146,4 +146,55 @@ ServerEvents.recipes(event => {
 	'kubejs:rubber'
 	);
 
+	event.recipes.create.mechanical_crafting(
+	"2x create:crushing_wheel",
+	[
+		' TTT ',
+		'TAWAT',
+		'TWGWT',
+		'TAWAT',
+		' TTT '
+	],
+	{
+		T: "kubejs:tungsten_carbide_teeth",
+		A: "kubejs:steel_sheet",
+		W: "create:andesite_casing",
+		G: "create:shaft"
+	});
+
+	event.smithing(
+	'create:controls',
+	'kubejs:sturdy_machine',
+	'minecraft:lever'
+	);
+	event.smithing(
+	'create:track_signal',
+	'kubejs:sturdy_machine',
+	'create:electron_tube'
+	);
+	event.smithing(
+	'create:track_station',
+	'kubejs:sturdy_machine',
+	'minecraft:compass'
+	);
+	event.smithing(
+	'railways:track_coupler',
+	'kubejs:sturdy_machine',
+	'minecraft:redstone'
+	);
+	event.smithing(
+	'create:track_observer',
+	'kubejs:sturdy_machine',
+	'minecraft:quartz'
+	);
+	event.smithing(
+	'create:steam_engine',
+	'kubejs:copper_machine',
+	'createdieselgenerators:engine_piston'
+	);
+	event.smithing(
+	'create:elevator_pulley',
+	'kubejs:andesite_machine',
+	'create:belt_connector'
+	);
 })

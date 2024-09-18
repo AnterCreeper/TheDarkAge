@@ -313,4 +313,14 @@ ServerEvents.recipes(event => {
 	"#forge:seeds",
 	"#kubejs:seeds"
 	);
+
+        event.recipes.create.compacting(
+        "2x create:chute",
+        "create:iron_sheet"
+        );
+        event.recipes.create.compacting(
+        "2x create:fluid_pipe",
+        "create:copper_sheet"
+        );
+
 })

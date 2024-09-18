@@ -4,4 +4,5 @@ ServerEvents.tags('item', event => {
 		event.add('forge:corundum_clusters', 'quark:'+ color +'_corundum_cluster');
 	});
 	event.add("forge:tools/knives", "eidolon:athame");
+	event.add("forge:shovels", "tconstruct:excavator");
 })

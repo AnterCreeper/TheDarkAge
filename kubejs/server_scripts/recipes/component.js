@@ -173,6 +173,18 @@ ServerEvents.recipes(event => {
 	event.recipes.create.cutting('2x kubejs:hepatizon_bolt', 'kubejs:hepatizon_rod');
 
 	event.shaped(
+	"createdieselgenerators:engine_piston",
+	[
+		"A  ",
+		" B ",
+		"  C"
+	],
+	{
+		A: "create:andesite_alloy",
+		B: "kubejs:steel_rod",
+		C: "tconstruct:amethyst_bronze_nugget"
+	});
+	event.shaped(
 	"kubejs:wooden_propeller",
 	[
 		" W ",
@@ -261,10 +273,31 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying(inter, [inter, 'create:wrench']).keepHeldItem()
 	]).transitionalItem(inter).loops(1);
 
+	event.shapeless(
+		"4x kubejs:tungsten_carbide_mixture",
+		Item.withNBT("kubejs:tungsten_mold", {type:"gear"}).weakNBT()
+	);
+	event.shapeless(
+		"5x kubejs:tungsten_carbide_mixture",
+		Item.withNBT("kubejs:tungsten_mold", {type:"drill"}).weakNBT()
+	);
+	event.shapeless(
+		"3x kubejs:tungsten_carbide_mixture",
+		Item.withNBT("kubejs:tungsten_mold", {type:"teeth"}).weakNBT()
+	);
+	event.shapeless(
+		"2x kubejs:tungsten_carbide_mixture",
+		Item.withNBT("kubejs:tungsten_mold", {type:"bolt"}).weakNBT()
+	);
+
 	event.shaped(
 	{
 		item: "kubejs:tungsten_mold",
-		nbt: {type:"gear"}
+		nbt:
+		{
+			display: {Lore: ["{\"text\":\"Gear\"}"]},
+			type: "gear"
+		}
 	},
 	[
 		"CDC",
@@ -278,7 +311,11 @@ ServerEvents.recipes(event => {
 	event.shaped(
 	{
 		item: "kubejs:tungsten_mold",
-		nbt: {type:"drill"}
+		nbt:
+		{
+			display: {Lore: ["{\"text\":\"Drill\"}"]},
+			type: "drill"
+		}
 	},
 	[
 		"CDD",
@@ -292,7 +329,11 @@ ServerEvents.recipes(event => {
 	event.shaped(
 	{
 		item: "kubejs:tungsten_mold",
-		nbt: {type:"teeth"}
+		nbt:
+		{
+			display: {Lore: ["{\"text\":\"Teeth\"}"]},
+			type: "teeth"
+		}
 	},
 	[
 		"CDC",
@@ -306,7 +347,11 @@ ServerEvents.recipes(event => {
 	event.shaped(
 	{
 		item: "kubejs:tungsten_mold",
-		nbt: {type:"bolt"}
+		nbt:
+		{
+			display: {Lore: ["{\"text\":\"Bolt\"}"]},
+			type: "bolt"
+		}
 	},
 	[
 		"CCD",
@@ -317,4 +362,135 @@ ServerEvents.recipes(event => {
 		"C": "kubejs:fire_clay_ball",
 		"D": "kubejs:tungsten_carbide_mixture"
 	});
+
+	event.blasting(
+		Item.withNBT("kubejs:burnt_tungsten_mold", {type:"gear"}),
+		Item.withNBT("kubejs:tungsten_mold", {type:"gear"}).weakNBT()
+	);
+	event.blasting(
+		Item.withNBT("kubejs:burnt_tungsten_mold", {type:"drill"}),
+		Item.withNBT("kubejs:tungsten_mold", {type:"drill"}).weakNBT()
+	);
+	event.blasting(
+		Item.withNBT("kubejs:burnt_tungsten_mold", {type:"teeth"}),
+		Item.withNBT("kubejs:tungsten_mold", {type:"teeth"}).weakNBT()
+	);
+	event.blasting(
+		Item.withNBT("kubejs:burnt_tungsten_mold", {type:"bolt"}),
+		Item.withNBT("kubejs:tungsten_mold", {type:"bolt"}).weakNBT()
+	);
+
+	event.recipes.farmersdelight.cutting(
+	Item.withNBT("kubejs:burnt_tungsten_mold", {type:"gear"}).weakNBT(),
+        "tconstruct:sledge_hammer",
+	"2x kubejs:tungsten_carbide_gear"
+	);
+	event.recipes.farmersdelight.cutting(
+	Item.withNBT("kubejs:burnt_tungsten_mold", {type:"drill"}).weakNBT(),
+        "tconstruct:sledge_hammer",
+	"kubejs:drill"
+	);
+	event.recipes.farmersdelight.cutting(
+	Item.withNBT("kubejs:burnt_tungsten_mold", {type:"teeth"}).weakNBT(),
+        "tconstruct:sledge_hammer",
+	"4x kubejs:tungsten_carbide_teeth"
+	);
+	event.recipes.farmersdelight.cutting(
+	Item.withNBT("kubejs:burnt_tungsten_mold", {type:"bolt"}).weakNBT(),
+        "tconstruct:sledge_hammer",
+	"6x kubejs:tungsten_carbide_bolt"
+	);
+
+	event.custom({
+		"type": "ratatouille:demolding",
+		"ingredients": [{
+			"type": "forge:nbt",
+			"item": "kubejs:burnt_tungsten_mold",
+			"nbt": {
+				"type": "gear"
+			}
+		}],
+		"results": [
+		{
+			"item": "kubejs:tungsten_carbide_gear",
+			"count": 2
+		},
+		{
+			"chance": 0.5,
+			"item": "kubejs:kaolinite"
+		},
+		{
+			"chance": 0.25,
+			"item": "kubejs:kaolinite"
+		}]
+	});
+	event.custom({
+		"type": "ratatouille:demolding",
+		"ingredients": [{
+			"type": "forge:nbt",
+			"item": "kubejs:burnt_tungsten_mold",
+			"nbt": {
+				"type": "drill"
+			}
+		}],
+		"results": [
+		{
+			"item": "kubejs:drill"
+		},
+		{
+			"chance": 0.5,
+			"item": "kubejs:kaolinite"
+		},
+		{
+			"chance": 0.25,
+			"item": "kubejs:kaolinite"
+		}]
+	});
+	event.custom({
+		"type": "ratatouille:demolding",
+		"ingredients": [{
+			"type": "forge:nbt",
+			"item": "kubejs:burnt_tungsten_mold",
+			"nbt": {
+				"type": "teeth"
+			}
+		}],
+		"results": [
+		{
+			"item": "kubejs:tungsten_carbide_teeth",
+			"count": 4
+		},
+		{
+			"chance": 0.5,
+			"item": "kubejs:kaolinite"
+		},
+		{
+			"chance": 0.25,
+			"item": "kubejs:kaolinite"
+		}]
+	});
+	event.custom({
+		"type": "ratatouille:demolding",
+		"ingredients": [{
+			"type": "forge:nbt",
+			"item": "kubejs:burnt_tungsten_mold",
+			"nbt": {
+				"type": "bolt"
+			}
+		}],
+		"results": [
+		{
+			"item": "kubejs:tungsten_carbide_bolt",
+			"count": 6
+		},
+		{
+			"chance": 0.5,
+			"item": "kubejs:kaolinite"
+		},
+		{
+			"chance": 0.25,
+			"item": "kubejs:kaolinite"
+		}]
+	});
+
 })

@@ -30,7 +30,11 @@ ServerEvents.recipes(event => {
 	]);
 
 	event.recipes.create.milling(
-	'4x kubejs:kaolinite',
+	'create:powdered_obsidian',
+	'minecraft:obsidian'
+	);
+	event.recipes.create.milling(
+	'1x kubejs:kaolinite',
 	'minecraft:granite'
 	);
 	event.recipes.create.milling(

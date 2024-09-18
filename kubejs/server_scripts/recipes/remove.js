@@ -202,6 +202,8 @@ ServerEvents.recipes(event => {
 	});
 
 	let machines_idlist = [
+		'create:crafting/kinetics/steam_engine',
+		'create:mechanical_crafting/crushing_wheel',
 		'ratatouille:oven_fan',
 		'create:crafting/kinetics/mechanical_roller',
 		'create:crafting/kinetics/deployer',
@@ -224,7 +226,14 @@ ServerEvents.recipes(event => {
 		'create:crafting/kinetics/item_drain',
 		'createdieselgenerators:crafting/pumpjack_hole',
 		'create_things_and_misc:sprinkler_craft',
-		'create:crafting/kinetics/hose_pulley'
+		'create:crafting/kinetics/hose_pulley',
+		'railways:crafting/track_coupler',
+		'create:crafting/kinetics/controls',
+		'create:crafting/kinetics/track_observer',
+		'create:crafting/kinetics/track_observer_from_other_plates',
+		'create:crafting/kinetics/track_station',
+		'create:crafting/kinetics/track_signal',
+		'create:crafting/kinetics/elevator_pulley'
 	];
 	for(let i of machines_idlist){
                 event.remove(
@@ -234,6 +243,9 @@ ServerEvents.recipes(event => {
         };
 
 	let material_idlist = [
+		'createdieselgenerators:crafting/engine_piston_from_rods',
+		'createdieselgenerators:crafting/engine_piston',
+		'create_things_and_misc:diluted_bonemeal_craft',
 		'create:crafting/materials/electron_tube',
 		'torcherino:torcherino',
 		'survivalistessentials:leather_from_cooked_meat_smoking',

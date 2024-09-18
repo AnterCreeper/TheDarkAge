@@ -1,0 +1,21 @@
+ServerEvents.blockLootTables(event => {
+	event.addBlock("kubejs:burnt_tungsten_mold_1", loot => {
+		loot.addPool(pool => {
+			pool.addItem("kubejs:kaolinite");
+			pool.addFunction({
+				"function": "minecraft:set_count",
+				"count": {
+					"min": 1,
+					"max": 3
+				}
+			});
+		});
+		loot.addPool(pool => {
+			pool.addItem("kubejs:tungsten_carbide_gear")
+			pool.addFunction({
+				"function": "minecraft:set_count",
+				"count": 2
+			});
+		});
+        });
+})

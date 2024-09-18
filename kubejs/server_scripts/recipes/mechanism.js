@@ -50,6 +50,17 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.deploying('kubejs:sturdy_mechanism', ['kubejs:advanced_kinetic_mechanism', 'create:sturdy_sheet']);
 
+	inter = "kubejs:incomplete_sturdy_machine";
+	event.recipes.create.sequenced_assembly(
+	"kubejs:sturdy_machine",
+	"create:railway_casing",
+	[
+		event.recipes.createDeploying(inter, [inter, 'kubejs:sturdy_mechanism']),
+		event.recipes.createDeploying(inter, [inter, 'kubejs:hepatizon_bolt']),
+		event.recipes.createDeploying(inter, [inter, 'kubejs:hepatizon_bolt']),
+		event.recipes.createDeploying(inter, [inter, 'create:wrench']).keepHeldItem()
+	]).transitionalItem(inter).loops(1);
+
 	inter = "kubejs:incomplete_sealed_mechanism";
 	event.recipes.create.sequenced_assembly(
 	"kubejs:sealed_mechanism",

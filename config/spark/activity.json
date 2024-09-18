@@ -1,0 +1,101 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "antercreeper",
+      "uniqueId": "38fa6dfc-f128-38c5-aa8f-ea66f11f17c7"
+    },
+    "time": 1726452078380,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/1mdSNYdVUA"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "antercreeper",
+      "uniqueId": "38fa6dfc-f128-38c5-aa8f-ea66f11f17c7"
+    },
+    "time": 1726099902684,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/fT0PXO9g0s"
+    }
+  },
+  {
+    "user": {
+      "type": "other",
+      "name": "Console"
+    },
+    "time": 1726023342811,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/XdXOKelbcR"
+    }
+  },
+  {
+    "user": {
+      "type": "other",
+      "name": "Console"
+    },
+    "time": 1726023245414,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/Ch2EYUOUBZ"
+    }
+  },
+  {
+    "user": {
+      "type": "other",
+      "name": "Console"
+    },
+    "time": 1725346112997,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/233qSnBamt"
+    }
+  },
+  {
+    "user": {
+      "type": "other",
+      "name": "Console"
+    },
+    "time": 1724934737613,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/N1sY1XeUcb"
+    }
+  },
+  {
+    "user": {
+      "type": "other",
+      "name": "Console"
+    },
+    "time": 1724238486941,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/75bDXSfYbc"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "antercreeper",
+      "uniqueId": "b8808e62-3074-403e-96ea-f3c29f33908d"
+    },
+    "time": 1722754041014,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/SPiYdfJENS"
+    }
+  }
+]
